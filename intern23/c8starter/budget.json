@@ -1,0 +1,54 @@
+{
+    "budget": {
+        "timings": {
+            "firstPaint": 2200,
+            "pageLoadTime": 3500,
+            "fullyLoaded": 4000,
+            "FirstVisualChange": 2200,
+            "LastVisualChange": 5000,
+            "SpeedIndex": 4000,
+            "VisualComplete95": 3500
+        },
+        "requests": {
+            "total": 40,
+            "html": 1,
+            "javascript": 3,
+            "css": 4,
+            "image": 6,
+            "font": 4
+        },
+        "transferSize": {
+            "total": 800000,
+            "html": 20000,
+            "javascript": 150000,
+            "css": 50000,
+            "image": 200000,
+            "font": 100000
+        },
+        "thirdParty": {
+            "transferSize": 200000,
+            "requests": 10
+        },
+        "score": {
+            "accessibility": 90,
+            "bestpractice": 90,
+            "privacy": 90,
+            "performance": 90
+        },
+        "lighthouse": {
+            "performance": 90,
+            "accessibility": 90,
+            "best-practices": 90,
+            "seo": 90
+        },
+        "webpagetest": {
+          "SpeedIndex": 3000,
+          "lastVisualChange": 5000,
+          "render": 800,
+          "visualComplete": 4000,
+          "visualComplete95": 4000,
+          "TTFB": 150,
+          "fullyLoaded": 4000
+        }
+    }
+  }

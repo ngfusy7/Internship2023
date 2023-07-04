@@ -1,0 +1,136 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 2,
+      "settings": {
+        "chromeFlags": "--disk-cache-size=0 --no-sandbox --headless --disable-dev-shm-usage",
+        "preset": "desktop",
+        "skipAudits": ["canonical", "uses-http2", "uses-long-cache-ttl"]
+      },
+      "url":[ 
+        "https://c8starter-html-staging.box.9thwonder.digital/",
+        "https://c8starter-html-staging.box.9thwonder.digital/ADA.html"
+      ]
+    },
+    "assert": {
+      "matchingUrlPattern": "https://[^/]",
+      "preset": "lighthouse:no-pwa",
+      "timings": [
+        {
+          "metric": "cumulative-layout-shift",
+          "budget": 3000
+        }
+      ],
+      "assertions": {
+       "categories:performance": ["error", {"minScore": 0.80}],
+       "first-contentful-paint": [
+          "warn",
+          {
+            "maxNumericValue": 5000,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "largest-contentful-paint": [
+          "warn",
+          {
+            "maxNumericValue": 5000,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "interactive": [
+          "warn",
+          {
+            "maxNumericValue": 10000,
+            "aggregationMethod": "optimistic"
+          }
+        ],
+        "link-name": "off",
+        "dom-size": "off",
+        "offscreen-images": "off",
+        "color-contrast": "off",
+        "tap-targets": "off",
+        "render-blocking-resources":"off",
+        "mainthread-work-breakdown":"off",
+        "uses-webp-images":"off",
+        "installable-manifest":"off",
+        "no-vulnerable-libraries":"off",
+        "uses-rel-preload":"off",
+        "max-potential-fid":"off",
+        "works-offline":"off",
+        "uses-rel-preconnect":"off",
+        "themed-omnibox":"off",
+        "heading-order":"off",
+        "meta-description":"off",
+        "unused-javascript":"off",
+        "uses-long-cache-ttl": "off",
+        "uses-http2": "off",
+        "font-display": "off",
+        "unused-css-rules": "off",
+        "uses-passive-event-listeners": "off",
+        "first-meaningful-paint": "off",
+        "first-cpu-idle": "off",
+        "lighthouse-largest-contentful-paint": "off",
+        "cls": "off",
+        "metrics": "off",
+        "speed-index": "off",
+        "uses-text-compression": "off",
+        "bootup-time": "off",
+        "unsized-images": "off",
+        "uses-responsive-images": "off",
+        "content-width": "off",
+        "apple-touch-icon": "off",
+        "maskable-icon": "off",
+        "offline-start-url": "off",
+        "estimated-input-latency": "off",
+        "total-blocking-time": "off",
+        "service-worker": "off",
+        "unminified-css": "off",
+        "unminified-javascript": "off",
+        "uses-optimized-images": "off",
+        "time-to-first-byte": "off",
+        "redirects": "off",
+        "efficient-animated-content": "off",
+        "critical-request-chains": "off",
+        "total-byte-weight": "off",
+        "user-timings": "off",
+        "performance-budget": "off",
+        "resource-summary": "off",
+        "third-party-summary": "off",
+        "network-requests": "off",
+        "network-rtt": "off",
+        "network-server-latency": "off",
+        "diagnostics": "off",
+        "final-screenshot": "off",
+        "screenshot-thumbnails": "off",
+        "main-thread-tasks": "off",
+        "button-name": "off",
+        "errors-in-console": "off",
+        "label": "off",
+        "image-size-responsive": "off",
+        "links-are-not-crawlable": "off",
+        "crawlable-anchors": "off",
+        "legacy-javascript": "off",
+        "avoid-serving-legacy-javaScript-to-modern-browsers": "off",
+        "non-composited-animations": "off",
+        "Avoid-non-composited-animations": "off",
+        "preload-lcp-image": "off",
+        "canonical": "off",
+        "bypass": "off",
+        "server-response-time": "off",
+        "modern-image-formats": "off",
+        "aria-required-children": "off",
+        "link-text": "off",
+        "csp-xss": "off",
+        "image-aspect-ratio": "off",
+        "splash-screen": "off",
+        "aria-required-parent":"off"
+      }
+    },
+    "upload": {
+      "target": "lhci",
+      "serverBaseUrl": "http://9thwonder:ySzYfPqUfFhXYkms@172.31.40.152/",
+      "token":"464438c5-05c7-46e5-bbff-375f113c36eb",
+      "admin":" JMb5BUAO6BnBkVLpqPwCwHcK4LzLmQmZrwUSIY2e"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.footer{
+  @apply mt-20;
+  a{
+    @apply no-underline;
+    color: inherit;
+    &:hover{
+      @apply text-primary-100;
+    }
+  }
+}
+.footer-copyright{
+  a {
+    @apply underline;
+
+    &:hover {
+      @apply text-primary-100;
+    }
+  }
+}

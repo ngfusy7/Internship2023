@@ -1,0 +1,137 @@
+.mod_content_slick{
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: #043673;
+    border: none;
+    outline: none;
+    transform: translate(0, -50%);
+    z-index: 11;
+    font-size: 30px;
+    top: -70px;
+  
+    @media (min-width: 767px) {
+      top: -10%;
+    }
+    @media (min-width: 1280px){
+      top: 20%;
+      
+    }
+  }
+  
+  .slick-prev {
+    right: 100px;
+    
+    @media (min-width: 1280px) {
+      left: -170px;
+      width: 30px;
+      top: 250px;
+    }
+  }
+  
+  .slick-next {
+    right: 70px;
+  
+    @media (min-width: 1280px) {
+      left: -140px;
+      width: 30px;
+      top: 250px;
+    }
+  }
+  
+  .slick-dots {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    padding: 0;
+    padding-right: 70px;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+  
+    @media (min-width: 767px) {
+      top: 0%;
+      justify-content: end;
+      gap: 55px;
+      right: 13px;
+    }
+  
+    @media (min-width: 1280px) {
+      justify-content: start;
+      padding-right: 0;
+      left: -390px;
+      top: 300px; // Change height here 
+    }
+  
+    li {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      margin-bottom: 0;
+      cursor: pointer;
+  
+      &::before {
+        display: none;
+      }
+      
+      button {
+        cursor: pointer;
+        border-radius: 50%;
+        text-indent: -9999px;
+        @apply relative w-10 h-10 block;
+  
+        &::after {
+          content: "";
+          @apply absolute top-0 left-0 block rounded-full bg-gray-100 w-27 md:w-35 h-1;
+          transition: 0.3s;
+          transform: translateX(50%) translateY(50%);
+        }
+      }
+  
+      &:hover,
+      &.slick-active {
+        button {
+          &::after {
+            height: 3px;
+            top: -1px;
+            @apply bg-blue-200;
+          }
+        }
+      }
+    }
+  }
+  
+  .slider,
+  .slider-lazy {
+    &:not(.slick-initialized) {
+      .slider-item:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+  
+  
+  .slider-items {
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
+    padding: 50px 20px;
+    
+  }
+  .items-image{
+    @media (min-width: 1280px) {
+      width: 500px;
+    }
+  }
+  .items-title{@media (min-width: 1280px) {
+    width: 500px;
+  }
+  }
+  
+  }

@@ -1,0 +1,27 @@
+
+[
+  {
+    "title": "About us",
+    "metaDescription": "About us page",
+    "file": "about",
+    "modulejs": ""
+  },
+  {
+    "title": "Contact us",
+    "metaDescription": "Contact us page",
+    "file": "contact-us",
+    "modulejs": "contact-us"
+  },
+  {
+    "title": "Our team",
+    "metaDescription": "Our team page",
+    "file": "team",
+    "modulejs": "team"
+  },
+  {
+    "title": "Blogs",
+    "metaDescription": "Blogs page",
+    "file": "blogs",
+    "modulejs": ""
+  }
+]

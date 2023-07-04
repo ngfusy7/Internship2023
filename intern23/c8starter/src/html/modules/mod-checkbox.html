@@ -1,0 +1,18 @@
+<section class="mod-checkbox module">
+ 
+  <div class="container">
+    <h2>Checkbox</h2>
+    <fieldset>
+      <legend class="mb-5">Select your check box:</legend>
+      {% for i in [1, 2, 3, 4]%}
+      <div class="checkbox-group relative mb-5">
+        <input class="cursor-pointer absolute top-0 left-0 opacity-0" id="ham-{{loop.index}}" type="checkbox" name="toppings" value="Check box {{loop.index}}">
+        <span class="form-mask checkbox-style bg-primary-100 w-10 h-10 inline-block absolute top-0 left-0 pointer-events-none"><span class="checkbox-tick w-4 h-7 inline-block absolute left-3 top-1 opacity-0"></span></span>
+        <label for="ham-{{loop.index}}" class="cursor-pointer pl-15">
+          This is check box {{loop.index}}
+        </label>
+      </div>
+      {% endfor%}
+    </fieldset>
+  </div>
+</section>

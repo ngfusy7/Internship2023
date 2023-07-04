@@ -1,0 +1,76 @@
+<!-- Please read readme.md -->
+<section id="{{nameSlider}}" class="mod-slider last-mb-none option-{{option}} {{customizeClass}}">
+  <div class="container">
+      <h2 id="{{nameSlider}}-heading">Slider option {{option}} {% if 'auto-play' in  customizeClass %} - Rotate {% endif %}</h2>
+    {% if option == 3%}
+    <div class="controls relative mx-auto w-100 mt-25 mb-50">
+      <div class="controls-dots"></div>
+    </div>
+    {% if 'auto-play' in  customizeClass %}
+    <div class="rotation-wrapper mx-auto text-center pt-10 mb-12">
+      <button class="slider-rotation h-20 p-0 bg-transparent border-none z-10 is-rotating opacity-70" type="button" >
+        <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svg-play">
+          <rect class="background fill-primary-100 stroke-primary-100 stroke-2 " x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+          <rect class="border fill-transparent stroke-transparent stroke-2" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+          <polygon class="pause fill-transparent stroke-white stroke-2" points="17 8 17 20"></polygon>
+          <polygon class="pause fill-transparent stroke-white stroke-2" points="24 8 24 20"></polygon>
+          <polygon class="play stroke-transparent stroke-1 fill-white" points="15 8 15 20 27 14"></polygon>
+        </svg>
+      </button>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    <div id="{{nameSlider}}-items" class="slider-items slider-items-option-{{option}} slider has-slider relative slider-lazy mx-auto" role="region" aria-labelledby ="{{nameSlider}}-heading">
+      {% for i in [1, 2, 3, 4, 5 ]%}
+      <div class="slider-item relative border-1 border-solid border-black rounded-lg overflow-hidden"
+        aria-label="{{loop.index}} of {{loop.length}}">
+        <div class="slider-item-wrapper" >
+          {% if option == 1 %}
+              <img data-src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" src="{{imagesBase64}}" alt="Walking Tour in Amsterdam {{loop.index}}" class="lazy slide-img w-full">
+          {% else %}
+          <div class="slider-image">
+            <img data-src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png" src="{{imagesBase64}}" alt="Walking Tour in Amsterdam {{loop.index}}" class="lazy slide-img w-full">
+          </div>
+        {% endif %}
+        <div class="slider-caption p-10">
+          <h3>
+            {% if option == 1%}
+              <a href="#" class="slider-item-link">
+                Slide item {{loop.index}}
+              </a>
+            {% else %} Slide item {{loop.index}} {% endif %}
+          </h3>
+
+          <p>
+            <span class="contrast">
+              Spinal cord injury treatment and rehabilitation at Craig focuses on aggressively working with patients physically and psychologically, so patients can maximize their neurological recovery and general health.
+            </span>
+          </p>
+        </div>
+      </div>
+
+
+      </div>
+      {% endfor%}
+    </div>
+    {% if option !== 3%}
+    <div class="controls relative mt-25 mx-auto w-100">
+      <div class="controls-dots"></div>
+    </div>
+    {% if 'auto-play' in  customizeClass %}
+    <div class="rotation-wrapper mx-auto text-center pt-10 mb-25">
+      <button class="slider-rotation h-20 p-0 bg-transparent border-none z-10 is-rotating opacity-70" type="button" >
+        <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svg-play">
+          <rect class="background fill-primary-100 stroke-primary-100 stroke-2 " x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
+          <rect class="border fill-transparent stroke-transparent stroke-2" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
+          <polygon class="pause fill-transparent stroke-white stroke-2" points="17 8 17 20"></polygon>
+          <polygon class="pause fill-transparent stroke-white stroke-2" points="24 8 24 20"></polygon>
+          <polygon class="play stroke-transparent stroke-1 fill-white" points="15 8 15 20 27 14"></polygon>
+        </svg>
+      </button>
+    </div>
+  {% endif %}
+    {% endif %}
+  </div>
+</section>

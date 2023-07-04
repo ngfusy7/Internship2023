@@ -1,0 +1,70 @@
+
+.label-animation {
+  transition: .25s all;
+}
+
+
+.active-select {
+ @apply z-2;
+}
+
+.active-focus,
+.active-select {
+  .form-inner {
+    .label-animation {
+      @apply -top-0;
+      font-size: 12px;
+      transition: .25s all;
+    }
+  }
+}
+
+// Zoom effects for mod test
+.my-container {
+  // position: relative;
+  // max-width: 20rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-container img {
+  // max-width: 20rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.my-container:hover img {
+  transform: scale(1.1);
+}
+
+// Lighter effect
+.my-container-2 {
+  // position: relative;
+  // max-width: 20rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-container-2 img {
+  // max-width: 20rem;
+}
+
+.my-overlay {
+  position: absolute;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // top: 0;
+  // height: 100%;
+  // width: 100%;
+  overflow: hidden;
+  background-color: hsla(0, 0%, 98.4%, 0.2);
+  background-attachment: fixed;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.my-overlay:hover {
+  opacity: 1;
+}

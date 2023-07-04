@@ -1,0 +1,3 @@
+{% macro lazyimages(src, class='', id='') %}
+<img data-src="{{src}}" src="" alt="{{src}}" class="lazy {{ class }}" id="{{ id }}" />
+{% endmacro %}

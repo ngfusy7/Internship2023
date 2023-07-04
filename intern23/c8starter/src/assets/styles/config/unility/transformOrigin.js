@@ -1,0 +1,14 @@
+const transformOrigin = {
+  center: 'center',
+  top: 'top',
+  'top-right': 'top right',
+  right: 'right',
+  'bottom-right': 'bottom right',
+  bottom: 'bottom',
+  'bottom-left': 'bottom left',
+  left: 'left',
+  'top-left': 'top left'
+}
+module.exports = {
+  transformOrigin
+}

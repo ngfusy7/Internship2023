@@ -1,0 +1,20 @@
+.checkbox-tick{
+  transform: rotate(45deg);
+  border: solid 2px #fff;
+  border-left: none;
+  border-top: none;
+}
+
+.checkbox-group,
+.radio-group {
+  input[type="checkbox"],
+  input[type="radio"]{
+    &:checked + .form-mask span{
+      @apply opacity-100;
+    }
+    &:not(.mouse):focus + .form-mask{
+      outline: 2px solid;
+      outline-offset: 2px;
+    }
+  }
+}

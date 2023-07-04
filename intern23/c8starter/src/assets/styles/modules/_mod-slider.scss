@@ -1,0 +1,45 @@
+
+.slider-items-option-2,
+.slider-items-option-3 {
+  @apply max-w-400 md:max-w-500;
+}
+
+.slider-items-option-1 {
+  @apply max-w-400 md:max-w-800 xl:max-w-none;
+}
+
+.mod-slider {
+
+  .slick-slide {
+    @apply mx-10 my-5;
+  }
+
+  .slick-list {
+    @apply -mx-10;
+  }
+
+}
+
+.slider-rotation {
+  .pause {
+    @apply hidden;
+  }
+  .play {
+    @apply block;
+    fill: white;
+  }
+
+  &:hover {
+    @apply opacity-100;
+  }
+
+  &.is-rotating {
+    .pause {
+      @apply block;
+    }
+    .play {
+      @apply hidden;
+    }
+  }
+
+}

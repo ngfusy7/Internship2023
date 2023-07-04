@@ -1,0 +1,74 @@
+$offset: 120px;
+$time: .6s;
+@screen xl {
+  body.has-animation{
+    .anima-left,
+    .anima-right,
+    .anima-bottom,
+    .anima-top,
+    .anima-opacity {
+      opacity: 0;
+      transition: opacity $time, transform $time;
+    }
+    
+    .anima-opacity{
+      transition: opacity 1s, transform $time;
+    }
+    .anima-left {
+      transform: translate3d(-$offset, 0, 0);
+    }
+    
+    .anima-right{
+      transform: translate3d($offset, 0, 0);
+    }
+  
+    .anima-bottom{
+      transform: translate3d(0, $offset, 0);
+    }
+    .anima-top{
+      transform: translate3d(0, -$offset, 0);
+    }
+
+    .set-animation {
+      &.anima-left,
+      &.anima-right,
+      &.anima-bottom,
+      &.anima-top {
+        transform: none;
+        opacity: 1;
+      }
+      &.anima-opacity {
+        opacity: 1;
+      }
+      // &.header {
+      //   transition: opacity .6s, transform .6s, background-color .4s;
+      // }
+      .anima-left,
+      .anima-right,
+      .anima-bottom,
+      .anima-top,
+      .anima-opacity {
+        transform: none;
+        opacity: 1;
+      
+      }
+    
+      .anima-opacity{
+        opacity: 1;
+        transition: opacity $time, transform $time;
+      }
+
+      @for $i from 1 through 10 {
+        $delay: $i*.1;
+        $delayLine: $i*.3;
+        $delay2: $i*.05 + .3;
+        .delay-#{$i}{
+          transition-delay: $delay+s !important;
+          // &::after {
+          //   transition-delay: $delayLine+s;
+          // }
+        }
+      }
+    }
+  }
+}

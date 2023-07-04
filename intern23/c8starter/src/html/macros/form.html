@@ -1,0 +1,103 @@
+
+{# Form Block #}
+{% macro formBlock(label, type='text', placeholder='', clsGroup='', clsInput='', message='', id='') %}
+    <div class="form-group {{ clsGroup }}">
+      {% if label %}
+        <label for="{{ id }}">{{ label }}</label>
+      {% endif %}
+      <div class="msg-input {{ clsInput }}">
+        <input type="{{ type }}" class="form-control" id="{{ id }}" name="{{ id }}" placeholder="{{ placeholder }}">
+        <div class="messages-error">
+          <div>{{ message }}</div>
+        </div>
+      </div>
+    </div>
+{% endmacro %}
+
+{# Form Horizontal #}
+{% macro formHorizontal(label, type='text', placeholder='', clsGroup='', clsColLabel='col-md-2',clsColInput='col-md-10', clsInput='', message='', id='') %}
+    <div class="form-group row {{ clsGroup }}">
+        {% if label %}
+          <label for="{{ id }}" class="{{ clsColLabel }}" >{{ label }}</label>
+        {% endif %}
+        <div class="col-input {{ clsColInput }}">
+          <div class="msg-input {{ clsInput }}">
+            <input type="{{ type }}" class="form-control" id="{{ id }}" name="{{ id }}" placeholder="{{ placeholder }}">
+            <div class="messages-error">
+              <div>{{ message }}</div>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{# Selectbox #}
+{% macro select(label, value, clsGroup='', clsInput='', message='', id='') %}
+  <div class="form-group {{ clsGroup }}">
+    {% if label %}
+      <label for="{{ id }}">{{ label }}</label>
+    {% endif %}
+    <div class="msg-input {{ clsInput }}">
+      <select class="form-control selectpicker" id="{{ id }}" name="{{ id }}">
+        <option>{{ value }}</option>
+        <option>phone</option>
+      </select>
+      <div class="messages-error">
+        <div>{{ message }}</div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{# Selectbox Horizontal#}
+{% macro selectHorizontal(label, value, clsGroup='', clsColLabel='col-md-2',clsColInput='col-md-10', clsInput='', message='', id='') %}
+  <div class="form-group row {{ clsGroup }}">
+    {% if label %}
+      <label for="{{ id }}" class="{{ clsColLabel }}">{{ label }}</label>
+    {% endif %}
+    <div class="col-input {{ clsColInput }}">
+      <div class="msg-input {{ clsInput }}">
+        <select class="selectbox form-control selectpicker" id="{{ id }}" name="{{ id }}">
+          <option>{{ value }}</option>
+          <option>{{ value }}</option>
+        </select>
+        <div class="messages-error">
+          <div>{{ message }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{# Textarea #}
+{% macro textarea(label, value, clsGroup='', clsInput='', message='', id='') %}
+  <div class="form-group {{ clsGroup }}">
+    {% if label %}
+      <label for="{{ id }}">{{ label }}</label>
+    {% endif %}
+    <div class="msg-textarea {{ clsInput }}">
+      <textarea class="form-control" id="{{ id }}" name="{{ id }}"></textarea>
+      <div class="messages-error">
+        <div>{{ message }}</div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{# Textarea Horizontal#}
+{% macro textareaHorizontal(label, value, clsGroup='', clsColLabel='col-md-2', clsColInput='col-md-10', clsInput='', message='', id='') %}
+  <div class="form-group row {{ clsGroup }}">
+    {% if label %}
+      <label for="{{ id }}" class="{{ clsColLabel }}">{{ label }}</label>
+    {% endif %}
+    <div class="col-input {{ clsColInput }}">
+      <div class="msg-textarea {{ clsInput }}">
+        <textarea class="form-control" id="{{ id }}" name="{{ id }}"></textarea>
+        <div class="messages-error">
+          <div>{{ message }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

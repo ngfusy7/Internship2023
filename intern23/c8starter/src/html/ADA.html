@@ -1,0 +1,66 @@
+---
+author: Frontend Team
+ourTeam: My Team
+title: ADA
+---
+{% extends 'layouts/application.html' %}
+{% block bodyClass %}class="page-home has-animation"{% endblock %}
+
+{% block content %}
+<main id="main-content" class="main-content pt-50">
+    <div class="h-20"></div>
+    <div class="container pb-10">
+        <h1>Page Example ADA</h1>
+    </div>
+    {% include 'modules/global/breadcrumb.html' %}
+    <div class="h-50"></div>
+    {% set nameTab = 'tab1' %}
+    {% include 'modules/ADA/mod-tabs.html' %}
+
+    <div class="h-50"></div>
+    {% set nameTab = 'tab2' %}
+    {% include 'modules/ADA/mod-tabs.html' %}
+    <div class="h-50"></div>
+
+    {% set nameAccordion = 'accordion1' %}
+
+    {% include 'modules/ADA/mod-accordion.html' %}
+    <div class="h-50"></div>
+
+    {% set onlyOpenOne = true %}
+    {% set nameAccordion = 'accordion2' %}
+    {% include 'modules/ADA/mod-accordion.html' %}
+    <div class="h-50"></div>
+
+    {% set option = 1 %}
+    {% set nameSlider = 'slider1' %}
+    {% set customizeClass = 'auto-play allow-tab-btn' %}
+    {% include 'modules/ADA/mod-slider-ada.html' %}
+    <div class="h-50"></div>
+
+    {% set option = 2 %}
+    {% set nameSlider = 'slider2' %}
+    {% set customizeClass = 'allow-tab' %}
+    {% include 'modules/ADA/mod-slider-ada.html' %}
+    <div class="h-50"></div>
+
+    {% set option = 3 %}
+    {% set nameSlider = 'slider3' %}
+    {% set customizeClass = 'auto-play allow-tab-btn' %}
+    {% include 'modules/ADA/mod-slider-ada.html' %}
+    <div class="h-50"></div>
+
+    {% include 'modules/mod-checkbox.html' %}
+    <div class="h-50"></div>
+    {% include 'modules/mod-radio.html' %}
+    <div class="h-50"></div>
+    {% include "modules/mod-popup.html" %}
+    {% include 'modules/ADA/mod-date-picker.html' %}
+    <div class="h-10"></div>
+    <div class="container">
+        <h2>Select c8</h2>
+        {% include 'modules/select-c8.html' %}
+    </div>
+    <div class="h-50"></div>
+</main>
+{% endblock %}

@@ -1,0 +1,20 @@
+---
+author: Frontend Team
+ourTeam: My Team
+title: Page list
+---
+{% extends 'layouts/application.html' %}
+{% block bodyClass %}class="page-home has-animation"{% endblock %}
+
+{% block content %}
+<main id="main-content" class="main-content py-60">
+  <div class="container">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/ADA.html">ADA.html</a></li>
+      <li><a href="/universal.html">universal.html</a></li>
+    </ol>
+  </div>
+</main>
+
+{% endblock %}

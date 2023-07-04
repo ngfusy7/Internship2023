@@ -1,0 +1,57 @@
+<footer id="footer" class="module footer bg-black text-white">
+  <div class="container footer-top pt-10">
+    <div class="row items-center">
+      {% for i in [1, 2, 3] %}
+      <div class="col w-1/2 lg:w-1/4">
+       <ul class="list-none pl-0">
+         <li>
+           <a class="h5" href="#">About Us</a>
+           <ul class="footer-menu list-none pl-0">
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+          </ul>
+        </li>
+       </ul>
+      
+      </div>
+      {%endfor%}
+      <div class="col w-1/2 lg:w-1/4">
+        <div class="h5 text-inherit">
+          <a href="#">Contact </a>
+        </div>
+        <address>
+          <a href="mailto:mailname@gmail.com">mailname@gmail.com</a>
+          <br />
+          US Office
+          <a href="tel:+12819944600">+352 269 763 07</a>
+        </address>
+        <address>
+          <a href="mailto:mailname@gmail.com">mailname@gmail.com</a>
+          <br />
+          US Office
+          <a href="tel:+12819944600">+352 269 763 07</a>
+        </address>
+        <div class="social mt-3">
+          {% include "modules/global/social.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center last-mb-none py-10" >
+    <p class="footer-copyright">
+      Copyright © 2018-2021 9thWonder |
+      <a href="#">Private Policy</a> |
+      <a href="#">Disclaimer</a>
+    </p>
+  </div>
+</footer>

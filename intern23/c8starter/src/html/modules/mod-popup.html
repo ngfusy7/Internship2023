@@ -1,0 +1,78 @@
+<div class="container">
+  <h3>Custom popup JS</h3>
+  <h4 id="label-popup">This is image 9thwonder</h4>
+  <h4 class="hidden" id="label-popup-video">This is video 9thwonder</h4>
+  <p>
+    <button type="button" data-id="#content-popup" data-htmlclass="html-popup-content" data-label="label-popup"
+      aria-haspopup="dialog" class="btn btn-primary popup-is-open no-underline has-popup">Popup is open Image</button>
+  </p>
+
+  <p><button type="button" data-id="#content-popup2" data-htmlclass="html-popup-content"
+      data-label="title-popup-content2" aria-haspopup="dialog"
+      class="btn btn-primary popup-is-open no-underline has-popup">Popup is open
+      content</button></p>
+
+  <p><button type="button"
+      data-href="https://www.youtube.com/embed/_sI_Ps7JSEk?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1"
+      data-id="" data-popup="video" data-htmlclass="html-popup-video" data-label="label-popup-video"
+      aria-haspopup="dialog" class="btn btn-primary popup-is-open no-underline has-popup" data-allow="autoplay">Popup is
+      open video</button></p>
+
+  <p><button type="button" data-id="#content-popup4" data-htmlclass="html-popup-content" data-label="label-popup"
+      aria-haspopup="dialog" class="btn btn-primary popup-is-open no-underline has-popup">Popup is open not
+      content</button></p>
+  <p>
+    <button type="button" id="popup-button-content1" data-id="#content-popup5" data-label="label-popup"
+      data-htmlclass="html-popup-content" aria-haspopup="dialog"
+      class="btn btn-primary popup-is-open no-underline has-popup">Popup is open popup
+      static</button>
+  </p>
+
+  <div class="h-25"></div>
+
+  <div id="content-popup" data-content="width-auto container" class="hidden">
+    <div class="popup-inner">
+      <img class="lazy" src="{{imagesBase64}}" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+        alt="name image" />
+    </div>
+  </div>
+
+  <div id="content-popup2" class="hidden">
+    <div class="container popup-inner">
+      <div class="p-10">
+        <h2 id="title-popup-content2">Headline style h2</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five
+          centuries
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-popup5" data-content="" class="mod-popup-static hidden">
+    <div class="popup-container inset-0 absolute">
+      <div class="popup-content container">
+        <div class="mask-pop-overlay"></div>
+        <div class="container popup-inner" role="dialog" aria-modal="true" aria-labelledby="popup-button-content1">
+          <div class="p-10">
+            <h2>Headline style h2 static</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not
+              only five centuries
+            </p>
+          </div>
+          <button type="button" class="popup-is-close no-underline">
+            <span class="icomoon icon-close"></span>
+            <span class="sr-only">Close Popup</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

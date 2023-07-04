@@ -1,0 +1,29 @@
+@layer base {
+  .btn {
+    @apply px-11 font-bold inline-block select-none align-middle rounded-sm uppercase py-7 border-2 no-underline mb-6 mr-6;
+  }
+
+  .btn-outline-primary {
+    @apply text-primary-100 border-primary-100;
+    @apply hover:text-white hover:bg-primary-100;
+  }
+  .btn-primary {
+    @apply text-white bg-primary-100 border-primary-100;
+    @apply hover:bg-primary-200 hover:border-primary-200 hover:text-white;
+  }
+
+  .btn-outline-light {
+    @apply text-white border-white;
+    @apply hover:bg-white hover:text-primary-100;
+  }
+  .btn-light {
+    @apply text-primary-100 border-white bg-white;
+    @apply hover:bg-transparent hover:text-white;
+  }
+  @media (prefers-reduced-motion){
+    .btn{
+      transition: 0s all;
+    }
+  }
+}
+

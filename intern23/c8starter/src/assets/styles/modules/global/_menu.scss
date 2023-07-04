@@ -1,0 +1,78 @@
+.hamburger-menu {
+  @apply p-0 mt-0 cursor-pointer;
+  .icon-bar {
+    @apply block bg-black relative ml-auto w-17 h-2;
+
+
+    +.icon-bar {
+      @apply mt-3;
+    }
+  }
+
+  .icomoon {
+    @apply hidden text-3xl leading-none;
+  }
+
+  &.is-open-menu {
+    .icomoon {
+      @apply block;
+    }
+
+    .icon-bar {
+      @apply hidden;
+    }
+  }
+}
+.main-menu{
+  a{
+    @apply no-underline;
+    .icomoon {
+      transition: all .25s;
+    }
+    &[aria-expanded="true"] {
+      .icomoon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.icon-arrow-menu{
+  font-size: 18px;
+}
+@screen lg {
+  .main-menu{
+    .menu-item {
+      &.hovering {
+        z-index: 3333;
+        .main-menu-dropdown {
+          @apply pointer-events-auto opacity-100 visible;
+          transform: translateY(0);
+          transition: .2s ease all;
+        }
+        .icomoon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .main-menu-dropdown {
+    visibility: hidden;
+    transition: .2s ease all;
+    transition-delay: 0.2s;
+    box-shadow: 0 44px 32px -34px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+  }
+}
+@screen down_lg {
+  .main-menu {
+    @apply max-h-0 invisible overflow-hidden duration-300 block w-full;
+    &.is-open-menu {
+      @apply max-h-2k visible duration-1000;
+    }
+  }
+  .is-open-child {
+    .main-menu-dropdown {
+      @apply block;
+    }
+  }
+}

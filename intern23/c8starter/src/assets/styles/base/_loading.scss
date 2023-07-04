@@ -1,0 +1,15 @@
+.hide-loader {
+  @apply hidden #{!important};
+}
+.donut {
+  border: 0.3rem solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  animation: .8s spin infinite linear;
+
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

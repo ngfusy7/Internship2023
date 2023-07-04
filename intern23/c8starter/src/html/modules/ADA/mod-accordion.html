@@ -1,0 +1,32 @@
+
+<section class="mod-accordion {%if (onlyOpenOne === true ) %} only-open-one {% endif %}">
+  <div class="container">
+    <h2 id="{{nameAccordion}}">Accordion {%if (onlyOpenOne === true )%} only open 1 item {% endif %}</h2>
+    <div class="accordion max-w-600">
+      {% for i in [1,2,3] %}
+      <div class="accordion-item border-1 rounded-sm border-black px-12 py-5 mb-10 last-mb-none">
+        <div class="accordion-title mb-0">
+          <h3>
+            <button type="button" aria-expanded="{%if(loop.index == 1)%}true{%else%}false{%endif%}"
+              class="accordion-trigger w-full {%if (loop.index == 1) %} js-expand {%endif%} hover:text-primary-100 flex justify-between"
+              aria-controls="{{nameAccordion}}-content-{{loop.index}}" id="{{nameAccordion}}-label-{{loop.index}}">
+                This is heading {%if (onlyOpenOne === true )%} v{% endif %}{{i}}
+              <span
+                class="accordion-toggle-icon mt-2 flex items-center icomoon icon-chevron-down pointer-events-none">
+              </span>
+            </button>
+          </h3>
+        </div>
+        <div id="{{nameAccordion}}-content-{{loop.index}}"
+          class="accordion-content-wrapper {%if (loop.index > 1)%} hidden {% endif %}"
+          aria-labelledby="{{nameAccordion}}-label-{{loop.index}}" role="region" >
+          <div class="accordion-content last-mb-none pr-20 md:pr-35 xl:pr-10 pb-12 md:pb-18 xl:pb-11">
+            <p>Spinal cord injury treatment and rehabilitation at Craig focuses on aggressively working with patients physically and psychologically, so patients can maximize their neurological recovery and general health.</p>
+            <p><a class="btn btn-primary" href="#">TAKE A TOUR</a></p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

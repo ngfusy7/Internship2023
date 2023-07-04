@@ -1,0 +1,9 @@
+.tab-nav-item{
+    &.active,
+    &:hover{
+        @apply bg-primary-100 text-white;
+    }
+    @media (prefers-reduced-motion){
+        transition: all 0s;
+    }
+}

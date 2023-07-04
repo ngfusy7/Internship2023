@@ -1,0 +1,334 @@
+---
+author: Frontend Team
+ourTeam: My Team
+title: Universal
+---
+
+{% from 'macros/lazyimages.html' import lazyimages %} {% extends
+'layouts/application.html' %}{% block bodyClass %}class="page-internal"{%
+endblock %} {% block content %}
+<main id="main-content" class="main-content pt-50">
+  <div class="container">
+    <h1>Headline style h1</h1>
+    <h2>Headline style h2</h2>
+    <h3>Headline <a href="#">style H3</a></h3>
+    <h4>Headline style H4</h4>
+    <h5>Headline style H5</h5>
+    <h6>Headline style H6</h6>
+    <p>
+      <a href="#" class="no-underline btn btn-primary"
+        >Default Large CTA</a
+      >
+    </p>
+    <p>
+      <a href="#" class="no-underline btn btn-outline-primary"
+        >Default Large CTA</a
+      >
+    </p>
+    <ul>
+      <li>
+        provide specific training a certifications to tower
+        <a href="#">climbers and maners in the field</a>
+      </li>
+      <li>provide specific training and certifications to to</li>
+      <li>
+        provide specific training and certifications to tower climbers and
+        managers in the field
+      </li>
+      <li>provide specific training and certrs and managers in the field</li>
+      <li>
+        provide specific training and certifications to tower climbers and
+        managers in the field
+      </li>
+    </ul>
+
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries
+    </p>
+    <ol>
+      <li>
+        provide specific training and certifications to tower
+        <a href="#">climbers and managers in the field</a>
+      </li>
+      <li>
+        provide specific training and certifications to tower climbers and
+        managers in the field
+      </li>
+      <li>
+        provide specific training and certifications to tower climbers and
+        managers in the field
+      </li>
+      <li>
+        provide specific training and certificat limbers and managers in the
+        field
+      </li>
+      <li>
+        provide specific training and certifications to tower climbers and
+        managers in the field
+      </li>
+    </ol>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries
+    </p>
+    <p>
+      <img
+      src="{{imagesBase64}}"
+        data-src="assets/images/ajax-loader.svg"
+        alt="load icon"
+        class="lazy img-svg"
+      />
+    </p>
+    <div class="p-10 text-white bg-primary-100 mb-3 text-inherit-child">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
+      <h2 class="h1">{{ author }} {{ ourTeam }}</h2>
+      <h2>Headline style H2</h2>
+      <h3>Headline style H3</h3>
+      <h4>Headline <a href="#">style H4</a></h4>
+      <h5>Headline style H5</h5>
+      <h6>Headline style H6</h6>
+      <p>
+        <a href="#" class="no-underline btn btn-light"
+          >Default Large CTA</a
+        >
+      </p>
+      <p>
+        <a href="#" class="no-underline btn btn-outline-light"
+          >Default Large CTA</a
+        >
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
+      <ul>
+        <li>
+          provide specific training and certifications to tower
+          <a href="#">climbers and managers in the field</a>
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+      </ul>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
+      <ol>
+        <li>
+          provide specific training and certifications to tower
+          <a href="#">climbers and managers in the field</a>
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+        <li>
+          provide specific training and certifications to tower climbers and
+          managers in the field
+        </li>
+      </ol>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="container">
+    <div class="text-white row fix-height">
+      <div class="col md:w-1/3">
+        <div class="p-8 item bg-primary-100 height-item mb-7 last-mb-none">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+      </div>
+      <div class="col md:w-1/3">
+        <div class="p-8 item bg-primary-100 height-item mb-7 last-mb-none">
+          <p>
+            Lorem Ipsum is simply dummy text of
+          </p>
+        </div>
+      </div>
+      <div class="col md:w-1/3">
+        <div class="p-8 item bg-primary-100 height-item mb-7 last-mb-none">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and
+          </p>
+        </div>
+      </div>
+      <div class="col md:w-1/3">
+        <div class="p-8 item bg-primary-100 height-item mb-7 last-mb-none">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy Lorem
+            Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="h-25"></div>
+    <div class="social">
+      {% include "modules/global/social.html" %}
+    </div>
+
+    <p>
+      <a href="#" class="no-underline btn btn-primary"
+        >Default Large CTA</a
+      >
+    </p>
+    <p>
+      <a href="#" class="no-underline btn btn-outline-primary"
+        >Default Large CTA</a
+      >
+    </p>
+    <br />
+    <h3>Custom select JS</h3>
+    {% include "modules/select-c8.html" %}
+    <div class="row">
+      <div class="w-1/2 col form-ani">
+        <div class="mb-10 form-group">
+          <label for="default-tex1">Field Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="default-tex1"
+            placeholder="Default Field"
+          />
+        </div>
+        <div class="mb-10 form-group form-group-v2">
+          <div class="relative form-inner z-1">
+            <label for="default-text2" class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
+            <input type="text" id="default-text2" class="form-control" />
+          </div>
+        </div>
+        <div class="mb-10 form-group form-group-v2">
+          <div class="relative form-inner z-1">
+            <label for="default-text3" class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
+            <input
+              type="text"
+              value="Thien"
+              id="default-text3"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-radio form-group">
+      <input type="radio" id="radio1" class="c-radio" name="radios3" />
+      <label for="radio1"> <span class="box"></span> My Local Location </label>
+    </div>
+    <div class="c-radio form-group">
+      <input type="radio" checked id="radio2" class="c-radio" name="radios3" />
+      <label for="radio2"> <span class="box"></span> My Local Location </label>
+    </div>
+    <div class="h-15"></div>
+    {% include "modules/mod-popup.html" %}
+    <div class="h-15"></div>
+
+    <picture>
+      <source media="(min-width:768px)" srcset="{{imagesBase64}}" data-srcset="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang.jpg">
+      <img class="lazy" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang-5.jpg" alt="" src="{{imagesBase64}}">
+      
+    </picture>
+
+    <img
+      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}"
+      alt="name image"
+      class="lazy"
+    />
+
+    <img
+      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}"
+      alt="name image"
+      class="lazy"
+    />
+    <img
+      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}"
+      alt="name image"
+      class="lazy"
+    />
+    <img
+      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}"
+      alt="name image"
+      class="lazy"
+    />
+    <img
+      class="hidden md:block lazy"
+      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}"
+      alt="name image"
+    />
+   <a href="#">
+    <img
+    class="lazy"
+    data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+    src="{{imagesBase64}}"
+    alt="name image"
+  />
+   </a>
+    {% include 'modules/mod-slider.html' %}
+    <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
+      disabilities achieve greater mobility and find their peak performance.</p>
+    <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
+        disabilities achieve greater mobility and find their peak performance.</p>
+    <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
+        disabilities achieve greater mobility and find their peak performance.</p>
+  </div>
+
+  <div class="h-25"></div>
+</main>
+{% endblock %}

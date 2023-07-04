@@ -1,0 +1,10 @@
+.breadcrumb {
+  li + li:before {
+    content: "";
+    @apply border-r-1 border-r-black inline-block mx-4 h-5;
+  }
+
+  a[aria-current="page"] {
+    @apply text-primary-100 font-bold no-underline hover:underline;
+  }
+}

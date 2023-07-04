@@ -1,0 +1,64 @@
+.datepicker {
+  @apply relative;
+  .group {
+    @apply relative;
+    width: 100%;
+  }
+
+  label {
+    @apply block
+  }
+
+}
+.datepicker-header{
+  @apply cursor-default bg-primary-100 p-4 flex justify-around text-white;
+  button{
+    @apply  p-2 w-12 h-12;
+  }
+}
+.table-dates{
+  @apply w-full p-8 pb-0;
+  th {
+    @apply text-center;
+  }
+
+  td {
+    @apply text-center p-2 m-0 w-20 h-20 rounded-sm bg-gray-50 cursor-pointer;
+    &:not(.disabled){
+      @apply cursor-pointer hover:bg-gray-100;
+    }
+    &.disabled {
+      @apply p-1 h-20 w-20 border-none;
+    }
+    &[tabindex="0"] {
+      @apply bg-primary-100 text-white;
+    }
+    &[aria-selected] {
+      &:focus {
+        @apply p-1 border-1 border-solid border-gray-400;
+      }
+    }
+  }
+
+  tr {
+    @apply border-1 border-solid border-black;
+  }
+
+}
+.datepicker-dialog {
+  @apply absolute border-1 border-solid border-primary-100 mt-2 rounded-sm bg-white ;
+  width: 320px;
+
+  .dates {
+    @apply w-full;
+  }
+
+  .dialog-ok-cancel-group {
+    @apply text-right p-5
+
+  }
+
+  .dialog-message {
+    @apply bg-primary-100 pt-3 px-8 text-white;
+  }
+}

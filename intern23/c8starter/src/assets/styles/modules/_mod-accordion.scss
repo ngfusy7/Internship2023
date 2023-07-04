@@ -1,0 +1,20 @@
+.accordion-trigger {
+  &.js-expand {
+    @apply mb-5;
+
+    .accordion-toggle-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+}
+.accordion-trigger,
+.accordion-toggle-icon {
+  transition: all .25s ease;
+}
+
+.accordion-trigger:focus:not(.mouse) {
+  outline-offset: 1px;
+  @apply outline-blue-300 rounded-sm;
+}
+

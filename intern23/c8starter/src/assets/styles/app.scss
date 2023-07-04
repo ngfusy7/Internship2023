@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'base/*.scss';
+@import 'core/lib/font-iconmoon';
+@import 'core/lib/form-animation';
+@import 'core/lib/select-c8';
+@import "slick-carousel/slick/slick.scss";
+@import 'core/lib/slick-theme';
+@import 'core/lib/popup';
+@import 'core/lib/date-picker';
+@import 'modules/global/*.scss';
+@import 'modules/*.scss';
+

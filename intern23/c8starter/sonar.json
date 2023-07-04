@@ -1,0 +1,4 @@
+{  
+  "sonarHost": "http://sonarqube.9thwonder.digital",
+  "sonarProjectKey": "9thWonder:c8starter-tailwindcss"
+}

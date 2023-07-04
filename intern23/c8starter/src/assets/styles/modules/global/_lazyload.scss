@@ -1,0 +1,8 @@
+img.b-loaded {
+  @apply animate-opacity visible;
+}
+
+img.lazy:not(.b-loaded) {
+  @apply m-0 mx-auto opacity-0 block max-h-0.5 invisible;
+}
+
