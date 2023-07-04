@@ -10,6 +10,11 @@ const Scales = {
   125: '1.25',
   150: '1.5'
 }
+
+let max = 10;
+for (let i = 0; i <= max; i+=0.5) {
+  Scales[i] = i;
+}
 module.exports = {
   Scales
 }

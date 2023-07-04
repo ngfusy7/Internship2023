@@ -1,0 +1,34 @@
+<section class="module mod-adjust">
+  <div class="container p-0 max-w-full">
+    <div class="main w-full xl:relative -mt-16 xl:mt-0">
+      <div class="banner xl:relative">
+        <picture class="image w-full">
+          <source media="(min-width:1440px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-desktop-2.jpg">
+          <source media="(min-width:1200px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-desktop-1.jpg">
+          <source media="(min-width:768px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-tablet.jpg">
+          <img class="lazy w-full 2xl:h-500 object-cover" src="{{imagesBase64}}" data-src="../../assets/images/adjust-mobile.jpg" alt="">
+        </picture>
+        <button class="btn-play absolute hidden 2xl:flex bottom-10 right-10 cursor-pointer items-center gap-5">
+          <span class="flex items-center">
+            <i class="fa-sharp fa-solid fa-circle-play" style="color: #4197B4;"></i>
+          </span>
+          <span>Play video</span>
+        </button>
+      </div>
+
+      <div class="frame static xl:absolute 2xl:max-w-800 xl:transform-center-middle h-full w-full">
+        <div class="box-content p-20 xl:pl-0 xl:absolute xl:w-175 2xl:w-280 xl:transform-middle xl:left-10p 2xl:left-0">
+          <h1>Adjust to amazing</h1>
+          <div class="mt-13">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis lorem orci fringilla nisl
+              eget ut mi velit.
+            </p>
+          </div>
+          <button class="btn-primary font-bold text-9 rounded-sm bg-blue-300 text-white px-10 py-5 cursor-pointer mt-19">
+            Primary Button
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

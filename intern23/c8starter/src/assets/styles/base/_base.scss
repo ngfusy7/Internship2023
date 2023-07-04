@@ -1,6 +1,6 @@
 @layer base {
   body {
-    @apply text-base text-black xl:text-lg;
+    @apply text-base text-black xl:text-lg font-sans;
   }
   html {
     @apply m-0;
@@ -11,54 +11,57 @@
   }
   h1,
   .h1 {
-    @apply text-h1 font-bold md:text-h1-md;
+    @apply font-bold text-18 md:text-21 2xl:text-36;
   }
 
   h2,
   .h2 {
-    @apply text-h2 font-bold md:text-h2-md;
+    @apply font-bold text-15 md:text-16 2xl:text-24;
   }
 
   h3,
   .h3 {
-    @apply text-h3 font-bold md:text-h3-md;
+    @apply font-medium text-13 md:text-12 2xl:text-18;
   }
 
   h4,
   .h4 {
-    @apply text-h4;
+    @apply font-medium text-11 md:text-10 2xl:text-12.5;
   }
 
   h5,
   .h5 {
-    @apply text-h5 font-bold;
+    @apply font-bold text-10 md:text-9 2xl:text-10;
   }
 
   h6,
   .h6 {
     @apply text-h5 font-medium;
   }
+  p {
+    @apply font-normal text-8;
+  }
   small {
     @apply text-sm;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6{
-    @apply mb-8;
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6{
+  //   @apply mb-8;
+  // }
 
-  p,
-  li,
-  ol,
-  ul,
-  blockquote,
-  figure{
-    margin: 0 0 15px;
-  }
+  // p,
+  // li,
+  // ol,
+  // ul,
+  // blockquote,
+  // figure{
+  //   margin: 0 0 15px;
+  // }
 
   ol,
   ul{
@@ -72,16 +75,14 @@
   ul{
     @apply list-disc;
   }
-  p {
-    @apply mb-15;
-  }
 }
 
 a {
-  @apply text-primary-100 underline hover:no-underline hover:text-primary-200;
-  
   &:-webkit-any-link:focus-visible {
     outline-offset: 3px;
+  }
+  &:hover {
+    @apply text-primary-200;
   }
 }
 
@@ -104,5 +105,16 @@ table{
   }
   th {
     @apply font-bold;
+  }
 }
+
+@layer utilities {
+  .left-none { left: unset; }
+  .right-none { right: unset; }
+  .top-none { top: unset; }
+  .bottom-none { bottom: unset; }
+}
+
+input::placeholder {
+  color: #ccc;
 }

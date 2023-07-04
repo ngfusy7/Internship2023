@@ -10,11 +10,11 @@
   }
   .transform-middle{
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
   .transform-center{
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
   .transform-center-middle{
     top: 50%;
@@ -52,4 +52,8 @@
 
 #__bs_notify__{
   display: none !important;
+}
+
+._border {
+  border: solid 1px;
 }

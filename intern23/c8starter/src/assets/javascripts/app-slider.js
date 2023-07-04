@@ -1,4 +1,3 @@
-import 'slick-carousel/slick/slick'
-import 'modules/SliderDemo'
-import 'modules/Content5'
-import 'modules/Footer2'
+// import 'slick-carousel/slick/slick'
+import 'modules/Testimonials'
+import 'modules/TurnYourBedroom'

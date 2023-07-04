@@ -1,0 +1,96 @@
+.mod-turn-your-bedroom {
+  // For slick slider
+  .btn-prev,
+  .btn-next {
+    @apply absolute block p-0 cursor-pointer text-blue-300 border-none outline-none text-15 -top-45 w-15
+      xl:right-none xl:top-140 2xl:top-135;
+  }
+  
+  .btn-prev {
+    @apply right-40 md:right-60 xl:-left-6
+  }
+  
+  .btn-next {
+    @apply right-20 md:right-40 xl:left-12;
+  }
+  
+  .btn-dots {
+    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+      md:justify-end md:right-45 md:gap-27.5 xl:gap-17
+      xl:justify-start xl:pr-0 xl:top-175 xl:-left-7 2xl:top-170;
+    
+    li {
+      @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
+      transform: translate(-50%, -50%);
+      
+      &::before {
+        @apply hidden;
+      }
+      
+      button {
+        border-radius: 50%;
+        text-indent: -9999px;
+        @apply relative w-10 h-10 block cursor-pointer;
+        
+        &::after {
+          content: "";
+          @apply absolute top-0 left-0 block rounded-full bg-gray-100 w-27 md:w-35 h-1 xl:w-25;
+          transition: 0.3s;
+          transform: translateX(50%);
+        }
+      }
+      
+      &:hover,
+      &.slick-active {
+        button {
+          &::after {
+            @apply bg-blue-200 h-1.5 -top-0.5;
+          }
+        }
+      }
+    }
+  }
+  
+  .slider,
+  .slider-lazy {
+    &:not(.slick-initialized) {
+      .slider-item:not(:first-child) {
+        @apply hidden;
+      }
+    }
+  }
+
+  // For file code
+  h3 {
+    @apply font-sans font-medium text-13
+      xl:text-12 2xl:text-18;
+    line-height: 140%;
+  }
+
+  p {
+    @apply text-gray-300 text-8 font-normal leading-12;
+  }
+
+  .box-image > img {
+    @apply w-full h-115 object-cover md:h-125 xl:h-160 2xl:h-250;
+  }
+
+  a > span {
+    @apply text-blue-300 font-bold text-7;
+  }
+
+  a {
+    @apply flex gap-4;
+    &:hover {
+      @apply text-primary-200;
+    }
+  }
+   
+  a > img {
+    @apply w-10 h-7 self-center;
+  }
+
+  .box {
+    @apply md:mr-7.5 xl:w-300 2xl:w-430;
+  }
+}

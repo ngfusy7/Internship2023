@@ -8,3 +8,5 @@ if (document.getElementsByClassName('slider-lazy').length) {
   link.href = window.pathCSS + 'app-slider.css'
   head.appendChild(link)
 }
+
+console.log('Run file load-module-css.js');

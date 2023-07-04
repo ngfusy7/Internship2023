@@ -1,0 +1,35 @@
+.mod-two-photos {
+  a > p {
+    @apply text-7 text-blue-300 m-0 font-bold;
+  }
+
+  above-content > p,
+  bellow-content > p {
+    @apply text-gray-300 leading-3 md:leading-3.5
+  }
+
+  bellow-content > p {
+    @apply xl:pr-12
+  }
+
+  h3 {
+    //styleName: H4 / 24px / Medium;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+  
+  .above-content,
+  .bellow-content {
+    @apply p-10 w-full text-base font-normal xl:w-3/5 2xl:w-1/2 xl:pl-50 xl:pt-30 2xl:pt-50;
+  }
+
+  .above-image > img,
+  .bellow-image > img {
+    @apply w-full object-cover md:h-210 xl:h-auto;
+  }
+}

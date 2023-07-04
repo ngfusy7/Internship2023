@@ -1,0 +1,28 @@
+.mod-the-latest {
+  .item-image > img {
+    @apply w-full object-cover h-115 md:h-125 xl:h-150;
+  }
+
+  h3 {
+    //styleName: Heading/H3: Medium - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  a > p {
+    @apply font-bold text-7 m-0;
+  }
+
+  h5 {
+    @apply text-10;
+  }
+
+  .item-content > p {
+    @apply text-8 text-gray-300;
+  }
+}

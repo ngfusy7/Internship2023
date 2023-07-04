@@ -1,0 +1,38 @@
+.mod-10-milion {
+  .container {
+    .main {
+      .content {
+        h2 {
+          //styleName: Heading/H2: Bold - Mobile;
+          font-family: Plus Jakarta Sans;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 42px;
+          letter-spacing: 0em;
+          text-align: center;
+
+        }        
+      }
+      .four-symboilize {
+        .sysm-above,
+        .sysm-bellow {
+          @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
+          .sysm {
+            @apply flex flex-col gap-10 items-center w-full md:w-1/2;
+            .sym-content {
+              p {
+                font-family: Plus Jakarta Sans;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: center;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

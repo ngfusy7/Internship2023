@@ -5,15 +5,16 @@ const lineHeight = {
   normal: '1.5',
   relaxed: '1.625',
   loose: '2',
-  3: '.75rem',
-  4: '1rem',
-  5: '1.25rem',
-  6: '1.5rem',
-  7: '1.75rem',
-  8: '2rem',
-  9: '2.25rem',
-  10: '2.5rem'
 }
+
+let p = 0;
+let max = 100;
+for (let i = 0; i <= max; i+=0.5) {
+  lineHeight[i] = i * 2 + 'px';
+  p = i + 'p';
+  lineHeight[p] = i * 2 + '%';
+}
+
 module.exports = {
   lineHeight
 }

@@ -52,14 +52,15 @@
 
   <body {% block bodyClass %}{% endblock %}>
     {% block header %}
-    {% include "modules/global/header.html" %}
+    {% include "modules/global/special.html" %}
+    <!-- {% include "modules/global/header.html" %} -->
     {% endblock %}
 
     {% block content %}
     {% endblock %}
 
     {% block footer %}
-    {% include "modules/global/footer.html" %}
+    {% include "modules/global/footer-sign-up.html" %}
     {% endblock %} 
 
     {% block javascript %}

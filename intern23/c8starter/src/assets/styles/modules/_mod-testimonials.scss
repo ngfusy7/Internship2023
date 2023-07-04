@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+// stylelint-disable
+
+/* Icons */
+
+/* Arrows */
+
+.mod-testimonials {
+  .btn-prev,
+  .btn-next {
+    @apply absolute block p-0 cursor-pointer border-none outline-none text-15 -top-35 w-15
+      md:top-105p xl:right-none;
+  }
+  
+  .btn-prev {
+    @apply right-20 xl:left-10;
+  }
+  
+  .btn-next {
+    @apply right-0 xl:left-30;
+  }
+  
+  .btn-dots {
+    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+      md:top-115p md:justify-end md:gap-27.5 right-6.5
+      xl:justify-start xl:pr-0 xl:right-none xl:-left-1;
+    
+    li {
+      @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
+      transform: translate(-50%, -50%);
+      
+      &::before {
+        @apply hidden;
+      }
+      
+      button {
+        border-radius: 50%;
+        text-indent: -9999px;
+        @apply relative w-10 h-10 block cursor-pointer;
+        
+        &::after {
+          content: "";
+          @apply absolute top-0 left-0 block rounded-full bg-gray-100 w-27 md:w-35 h-1;
+          transition: 0.3s;
+          transform: translateX(50%);
+        }
+      }
+      
+      &:hover,
+      &.slick-active {
+        button {
+          &::after {
+            @apply bg-blue-200 h-1.5 -top-0.5;
+          }
+        }
+      }
+    }
+  }
+  
+  .slider,
+  .slider-lazy {
+    &:not(.slick-initialized) {
+      .slider-item:not(:first-child) {
+        @apply hidden;
+      }
+    }
+  }
+
+  .slider {
+    @apply xl:-mr-100 xl:-ml-10 xl:pl-10;
+  }
+  
+  .slider-items {
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+    @apply w-full my-15 py-30 px-25
+      md:py-10 xl:py-20 2xl:py-30 md:w-160 xl:w-190 2xl:w-245 mx-0 md:mx-5 2xl:mx-15.5;
+  }
+
+  .items-content {
+    @apply text-8 text-gray-300 my-30 md:my-0 xl:my-20 2xl:my-30;
+  }
+
+  img {
+    @apply w-10 h-10;
+  }
+
+  .title > h3 {
+    @apply font-bold text-15 m-0;
+  }
+
+  .title > a > p {
+    @apply text-7 font-bold m-0;
+  }
+
+  .items-footer > h6 {
+    @apply font-semibold text-8;
+  }
+}

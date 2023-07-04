@@ -1,5 +1,3 @@
-let max = 101
-let p = 0
 let Space = {
   '0p5': '1px',
   '1p5': '3px',
@@ -12,11 +10,13 @@ let Space = {
   '100vh': '100vh',
   "5": '5px',
   "8": '8px',
+  "9": '9px',
   "10": '10px',
   "13": '13px',
   "15" :'15px',
   "16" :'16px',
   "18": '18px',
+  "19": '19px',
   "20": '20px',
   "25": '25px',
   "30": '30px',
@@ -69,15 +69,15 @@ let Space = {
   "800" :'800px',
   "1200" :'1200px',
   "1300" :'1300px'
-
 }
 
-for (let i = 0; i < max; i++) {
+let p = 0
+let max = 1000
+for (let i = 0; i <= max; i+=0.5) {
   Space[i] = i * 2 + 'px'
   p = i + 'p'
   Space[p] = i + '%'
 }
-// console.log(Space)
 
 module.exports = {
   Space

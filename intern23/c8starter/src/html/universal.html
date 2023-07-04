@@ -7,7 +7,7 @@ title: Universal
 {% from 'macros/lazyimages.html' import lazyimages %} {% extends
 'layouts/application.html' %}{% block bodyClass %}class="page-internal"{%
 endblock %} {% block content %}
-<main id="main-content" class="main-content pt-50">
+<main id="main-content" class="main-content pt-100">
   <div class="container">
     <h1>Headline style h1</h1>
     <h2>Headline style h2</h2>
@@ -16,14 +16,10 @@ endblock %} {% block content %}
     <h5>Headline style H5</h5>
     <h6>Headline style H6</h6>
     <p>
-      <a href="#" class="no-underline btn btn-primary"
-        >Default Large CTA</a
-      >
+      <a href="#" class="no-underline btn btn-primary">Default Large CTA</a>
     </p>
     <p>
-      <a href="#" class="no-underline btn btn-outline-primary"
-        >Default Large CTA</a
-      >
+      <a href="#" class="no-underline btn btn-outline-primary">Default Large CTA</a>
     </p>
     <ul>
       <li>
@@ -77,12 +73,7 @@ endblock %} {% block content %}
       make a type specimen book. It has survived not only five centuries
     </p>
     <p>
-      <img
-      src="{{imagesBase64}}"
-        data-src="assets/images/ajax-loader.svg"
-        alt="load icon"
-        class="lazy img-svg"
-      />
+      <img src="{{imagesBase64}}" data-src="assets/images/ajax-loader.svg" alt="load icon" class="lazy img-svg" />
     </p>
     <div class="p-10 text-white bg-primary-100 mb-3 text-inherit-child">
       <p>
@@ -99,14 +90,10 @@ endblock %} {% block content %}
       <h5>Headline style H5</h5>
       <h6>Headline style H6</h6>
       <p>
-        <a href="#" class="no-underline btn btn-light"
-          >Default Large CTA</a
-        >
+        <a href="#" class="no-underline btn btn-light">Default Large CTA</a>
       </p>
       <p>
-        <a href="#" class="no-underline btn btn-outline-light"
-          >Default Large CTA</a
-        >
+        <a href="#" class="no-underline btn btn-outline-light">Default Large CTA</a>
       </p>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -175,7 +162,7 @@ endblock %} {% block content %}
       </p>
     </div>
   </div>
-  
+
 
   <div class="container">
     <div class="text-white row fix-height">
@@ -221,14 +208,10 @@ endblock %} {% block content %}
     </div>
 
     <p>
-      <a href="#" class="no-underline btn btn-primary"
-        >Default Large CTA</a
-      >
+      <a href="#" class="no-underline btn btn-primary">Default Large CTA</a>
     </p>
     <p>
-      <a href="#" class="no-underline btn btn-outline-primary"
-        >Default Large CTA</a
-      >
+      <a href="#" class="no-underline btn btn-outline-primary">Default Large CTA</a>
     </p>
     <br />
     <h3>Custom select JS</h3>
@@ -237,28 +220,20 @@ endblock %} {% block content %}
       <div class="w-1/2 col form-ani">
         <div class="mb-10 form-group">
           <label for="default-tex1">Field Title</label>
-          <input
-            type="text"
-            class="form-control"
-            id="default-tex1"
-            placeholder="Default Field"
-          />
+          <input type="text" class="form-control" id="default-tex1" placeholder="Default Field" />
         </div>
         <div class="mb-10 form-group form-group-v2">
           <div class="relative form-inner z-1">
-            <label for="default-text2" class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
+            <label for="default-text2"
+              class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
             <input type="text" id="default-text2" class="form-control" />
           </div>
         </div>
         <div class="mb-10 form-group form-group-v2">
           <div class="relative form-inner z-1">
-            <label for="default-text3" class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
-            <input
-              type="text"
-              value="Thien"
-              id="default-text3"
-              class="form-control"
-            />
+            <label for="default-text3"
+              class="absolute m-0 pointer-events-none label-animation top-5 left-12 z-1">Animation</label>
+            <input type="text" value="Thien" id="default-text3" class="form-control" />
           </div>
         </div>
       </div>
@@ -276,57 +251,34 @@ endblock %} {% block content %}
     <div class="h-15"></div>
 
     <picture>
-      <source media="(min-width:768px)" srcset="{{imagesBase64}}" data-srcset="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang.jpg">
-      <img class="lazy" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang-5.jpg" alt="" src="{{imagesBase64}}">
-      
+      <source media="(min-width:768px)" srcset="{{imagesBase64}}"
+        data-srcset="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang.jpg">
+      <img class="lazy" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/33/nha-trang-5.jpg" alt=""
+        src="{{imagesBase64}}">
     </picture>
 
-    <img
-      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-      src="{{imagesBase64}}"
-      alt="name image"
-      class="lazy"
-    />
+    <img data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg" src="{{imagesBase64}}"
+      alt="name image" class="lazy" />
 
-    <img
-      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-      src="{{imagesBase64}}"
-      alt="name image"
-      class="lazy"
-    />
-    <img
-      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-      src="{{imagesBase64}}"
-      alt="name image"
-      class="lazy"
-    />
-    <img
-      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-      src="{{imagesBase64}}"
-      alt="name image"
-      class="lazy"
-    />
-    <img
-      class="hidden md:block lazy"
-      data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-      src="{{imagesBase64}}"
-      alt="name image"
-    />
-   <a href="#">
-    <img
-    class="lazy"
-    data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
-    src="{{imagesBase64}}"
-    alt="name image"
-  />
-   </a>
+    <img data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg" src="{{imagesBase64}}"
+      alt="name image" class="lazy" />
+    <img data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg" src="{{imagesBase64}}"
+      alt="name image" class="lazy" />
+    <img data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg" src="{{imagesBase64}}"
+      alt="name image" class="lazy" />
+    <img class="hidden md:block lazy" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+      src="{{imagesBase64}}" alt="name image" />
+    <a href="#">
+      <img class="lazy" data-src="https://cdn.agilitycms.com/9th-wonder/MediaGroupings/15/nha-trang-1.jpg"
+        src="{{imagesBase64}}" alt="name image" />
+    </a>
     {% include 'modules/mod-slider.html' %}
     <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
       disabilities achieve greater mobility and find their peak performance.</p>
     <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
-        disabilities achieve greater mobility and find their peak performance.</p>
+      disabilities achieve greater mobility and find their peak performance.</p>
     <p>In the DANI Project, Arrow is developing a series of new smart technologies to help people with physical
-        disabilities achieve greater mobility and find their peak performance.</p>
+      disabilities achieve greater mobility and find their peak performance.</p>
   </div>
 
   <div class="h-25"></div>

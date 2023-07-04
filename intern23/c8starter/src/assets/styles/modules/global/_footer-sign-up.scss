@@ -1,0 +1,76 @@
+.footer-sign-up {
+  .title h5 {
+    @apply text-10 xl:text-9;
+  }
+
+  .row-header > ul > li > a > p,
+  .row-body > p {
+    @apply font-semibold text-8 text-gray-300;
+  }
+
+  .row-header > ul > li:hover > a > p {
+    @apply underline text-blue-300;
+  }
+
+  .shop,
+  .learn,
+  .support,
+  .company {
+    @apply w-full p-20 pr-0;
+    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:pl-20;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .container {
+    .main {
+      .box-input {
+        .title {
+          p {
+            @apply font-semibold;
+          }
+        }
+
+        .contact {
+          .phone {
+            p {
+              @apply text-12.5 font-medium m-0;
+            }
+          }
+        }
+      }
+
+      .infor {
+        .row-body {
+          p {
+            @apply text-gray-500;
+          }
+        }
+
+        .row-footer {
+          p {
+            @apply text-8 text-gray-500;
+          }
+
+          p:nth-child(1) {
+            @apply mb-10;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-sign-up {
+    .container {
+      .main {
+        .info {
+          width: calc(100% - 500px);
+        }
+      }
+    }
+  }
+}

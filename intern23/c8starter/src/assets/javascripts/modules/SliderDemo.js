@@ -4,19 +4,22 @@ export default class SliderDemo {
   }
   init () {
     if (this.$this.length) {
-      this.addSlick()
+      this.loadSlider()
     }
   }
-  addSlick () {
+  loadSlider () {
     this.$this.find('.slider').slick({
-      rows: 0,
-      adaptiveHeight: true,
-      slidesToShow: 3,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
       arrows: true,
+      focusOnSelect: true,
+      adaptiveHeight: true,
+      rows: 0,
+
       prevArrow: '<button class="slick-prev arrows h1 text-primary-100"><span class="icomoon icon-chevron-left"></span><span class="sr-only">Prev slider</span></button>',
-      nextArrow: '<button class="slick-next arrows h1 text-primary-100"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>'
+      nextArrow: '<button class="slick-next arrows h1 text-primary-100"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>',
     })
   }
 }
 new SliderDemo().init()
-console.log("SY VIp ")

@@ -6,20 +6,18 @@ ourTeam: My Team
 {% block bodyClass %}class="page-home has-animation"{% endblock %}
 
 {% block content %}
-<main id="main-content" class="main-content pt-40">
-    {% include 'modules/mod-content-1.html' %}
-    
-</main>
-    
-    {% include 'modules/mod-content.html' %}
-    {% include 'modules/mod-content-2.html' %}
-    {% include 'modules/mod-content-3.html' %}
-    {% include 'modules/mod-content-4.html' %}
-    {% include 'modules/mod-content-5.html' %}
-    {% include 'modules/mod-content-slick.html' %}
-    {% include 'modules/mod-grid.html' %}
-    {% include 'modules/mod-dropdown.html' %}
-    {% include 'modules/mod-footer.html' %}
+<main id="main-content" class="main-content pt-85">
+  <!-- {% include 'modules/mod-banner-internal.html' %} -->
+  <!-- {% include 'modules/mod-hello-world.html' %} -->
 
-    
+  {% include 'modules/mod-adjust.html' %}
+  {% include 'modules/mod-10-milion.html' %}
+  {% include 'modules/mod-turn-your-bedroom.html' %}
+  {% include 'modules/mod-meet-the-quest.html' %}
+  {% include 'modules/mod-testimonials.html' %}
+  {% include 'modules/mod-scary-mommy.html' %}
+  {% include 'modules/mod-the-latest.html' %}
+  {% include 'modules/mod-connect.html' %}
+</main>
+
 {% endblock %}

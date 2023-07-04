@@ -1,38 +1,11 @@
+// Slick slider
 import 'slick-carousel/slick/slick'
-// // js Custom
-import 'modules/FixHeight'
+import 'app-slider'
 
-import 'modules/BrowserDetection'
-import 'modules/CheckDevice'
-import 'modules/ConvertSvg'
-import 'modules/LazyLoadImage'
-import 'modules/mod-dropdown'
-import 'modules/FormAnimation'
-import 'modules/mod-dropdown'
-import 'modules/Footer2'
-import 'modules/UserAgent'
+// js Custom
+import 'app-custom'
 
-import 'modules/mod-header'
-import 'modules/Menu'
-import 'modules/AnimationScrollPage'
-import 'modules/ConvertSvg'
-import 'modules/Content5'
-
-
-
-
-
-
-// //ADA support ADA
-import 'modules/Popup'
-import 'modules/DatePickerDialog'
-import 'modules/SelectC8'
-
-// //ADA
-import 'modules/ModAccordion'
-import 'modules/TabList'
-import 'modules/ADAMenu'
-import 'modules/ModCarouselSlide'
-import 'modules/ADA'
+// ADA support ADA
+import 'app-ada'
 
 console.log('App desktop')

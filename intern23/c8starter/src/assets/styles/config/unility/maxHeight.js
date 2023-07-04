@@ -6,8 +6,15 @@ const maxHeight = {
   screen: '100vh',
   initial: 'initial',
   'none': 'none',
-  '2k': '2000px'
+  '2k': '2000px',
+  '1080': '1080px',
 }
+
+let max = 1000;
+for (let i = 0; i <= max; i++) {
+  maxHeight[i] = i * 2 + 'px';
+}
+
 module.exports = {
   maxHeight
 }

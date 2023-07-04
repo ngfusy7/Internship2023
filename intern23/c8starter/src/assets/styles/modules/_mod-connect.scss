@@ -1,0 +1,28 @@
+.mod-connect {
+ p {
+  @apply text-7 font-bold text-blue-300;
+ } 
+
+ h3 {
+  @apply text-14 md:text-12 2xl:text-18 font-bold m-0;
+ }
+
+ .images-items {
+    @apply flex justify-center items-center gap-5 w-full h-30p;
+ }
+
+ .size-img {
+   @apply w-1/4 h-full;
+ }
+
+ img {
+   @apply w-full;
+ }
+
+ .images {
+   translate: -40px;
+   @media (min-width: 768px) {
+      translate: 0px;
+   }
+ }
+}

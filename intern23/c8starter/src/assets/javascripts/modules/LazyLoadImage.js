@@ -46,26 +46,28 @@ export default class LazyLoadImage {
       callBack.call(el.tagName, el)
     })
   }
-  lazyloadimageCustom () {
+  
+  lazyloadimageCustom() {
     $(this.lazyimage).each((_index, element) => {
-      const elementScroll = $(element).offset().top - window.innerHeight - (window.innerHeight / 3.5)
-      const scrollBody = $(window).scrollTop()
-      if (elementScroll < scrollBody) {
-        const elementTmp = element.tagName
-        callBack.call(elementTmp, element)
+      const elementScroll = $(element).offset().top - $(window).height();
+      const scrollBody = $(window).scrollTop();
+      if (scrollBody >= elementScroll) {
+        const elementTmp = element.tagName;
+        callBack.call(elementTmp, element);
         if ($(element).parents('.fix-height').length) {
           $(element).on('load', () => {
             setTimeout(() => {
-              window.callFixHeight()
-            }, 200)
-          })
+              window.callFixHeight();
+            }, 200);
+          });
         }
         if ($(element).parents('.slider-lazy').hasClass('slick-initialized')) {
-          this.hasSlider(element)
+          this.hasSlider(element);
         }
       }
-    })
+    });
   }
+
   lazyLoadAllPrint() {
     const $imgLazy = $('img.lazy:visible,img.lazy.show-print')
 
