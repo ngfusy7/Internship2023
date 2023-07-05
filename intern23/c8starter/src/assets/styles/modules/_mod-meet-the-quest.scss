@@ -1,10 +1,51 @@
 .mod-meet-the-quest {
   .title > h3 {
-    @apply text-13 font-bold m-0;
+    //styleName: Heading/H3: Medium - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2020;
+    width: 300px;
   }
-
+  h5 {
+    //styleName: Heading/H5: Bold - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2020;
+    margin-top: 20px;
+  }
+  .box2{
+    margin-top: 48px;
+  }
+  .item-content-content p {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10px;
+  }
   a > p {
-    @apply text-7 m-0 font-bold;
+    //styleName: Link: Bold;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #043673;
+    margin-top: 27px;
+  }
+  .arrow{
+    margin-top:27px;
   }
   .item-image > img {
     @apply w-full object-cover max-h-115 min-h-115

@@ -62,13 +62,32 @@
 
   // For file code
   h3 {
-    @apply font-sans font-medium text-13
-      xl:text-12 2xl:text-18;
-    line-height: 140%;
-  }
+    //styleName: Heading/H3: Medium - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2020;
 
+  }
+  .box-content h3{
+    margin-top: 58px;
+  }
   p {
-    @apply text-gray-300 text-8 font-normal leading-12;
+    //styleName: Paragraph: Regular - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #646464;
+    margin-top: 12px;
+  }
+  .box-content p{
+    margin-top: 17px;
   }
 
   .box-image > img {
@@ -76,7 +95,16 @@
   }
 
   a > span {
-    @apply text-blue-300 font-bold text-7;
+    //styleName: Link: Bold;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #043673;
+    margin-top: 20px;
+
   }
 
   a {

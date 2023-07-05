@@ -15,14 +15,45 @@
   }
 
   a > p {
-    @apply font-bold text-7 m-0;
+    
+    //styleName: Link: Bold;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #043673;
+    margin-top: 25px;
   }
-
+  .arrow{
+    margin-top: 25px;
+  }
   h5 {
-    @apply text-10;
+    //styleName: Heading/H5: Bold - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2020;
+    margin-top: 18px;
   }
 
   .item-content > p {
-    @apply text-8 text-gray-300;
+    // @apply text-8 text-gray-300;
+    //styleName: Paragraph: Semi-Bold;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #646464;
+    margin-top: 20px;
+  }
+  .item{
+    margin-top: 20px;
   }
 }

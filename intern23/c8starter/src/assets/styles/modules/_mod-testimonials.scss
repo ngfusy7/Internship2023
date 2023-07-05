@@ -85,11 +85,30 @@
   }
 
   .title > h3 {
-    @apply font-bold text-15 m-0;
+    //styleName: Heading/H3: Medium - Mobile;
+    font-family: Plus Jakarta Sans;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2020;
+
   }
 
   .title > a > p {
-    @apply text-7 font-bold m-0;
+    //styleName: Link: Bold;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #043673;
+    margin-top: 25px;
+  }
+  .arrow{
+    margin-top: 25px;
   }
 
   .items-footer > h6 {
