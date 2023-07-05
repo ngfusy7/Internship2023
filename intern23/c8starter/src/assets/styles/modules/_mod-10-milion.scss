@@ -10,7 +10,13 @@
           line-height: 42px;
           letter-spacing: 0em;
           text-align: center;
+          @media (min-width: 768px) {
+            //styleName: Heading/H2: Bold - Medium;
+            font-size: 32px;
+            line-height: 45px;
+            width: 450px;
 
+         }
         }        
       }
       .sym-icon{
@@ -21,7 +27,7 @@
         .sysm-bellow {
           @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
           .sysm {
-            @apply flex flex-col gap-10 items-center w-full md:w-1/2;
+            @apply flex flex-col gap-10 items-center w-full md:w-150;
             .sym-content {
               p {
                 font-family: Plus Jakarta Sans;
@@ -32,6 +38,10 @@
                 text-align: center;
                 width: 200px;
                 margin-top: 20px;
+                @media (min-width: 768px) {
+                  width: 250px;
+      
+               }
               }
             }
           }

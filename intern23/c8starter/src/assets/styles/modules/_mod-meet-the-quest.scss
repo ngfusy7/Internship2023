@@ -9,6 +9,13 @@
     text-align: left;
     color: #1D2020;
     width: 300px;
+    @media (min-width: 768px) {
+      
+      //styleName: Heading/H3: Medium - Medium;
+      font-size: 24px;
+      line-height: 38px;
+      width: 600px;
+    }
   }
   h5 {
     //styleName: Heading/H5: Bold - Mobile;
@@ -20,9 +27,17 @@
     text-align: left;
     color: #1D2020;
     margin-top: 20px;
+    @media (min-width: 768px) {
+      //styleName: Heading / H5: Bold - Medium;
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
   .box2{
     margin-top: 48px;
+    @media (min-width: 768px) {
+      margin-top: 0px;
+    }
   }
   .item-content-content p {
     font-family: Plus Jakarta Sans;
@@ -43,9 +58,17 @@
     text-align: left;
     color: #043673;
     margin-top: 27px;
+    @media (min-width: 768px) {
+      margin-top: 12px;
+      
+    }
   }
   .arrow{
     margin-top:27px;
+    @media (min-width: 768px) {
+      margin-top: 12px;
+      
+    }
   }
   .item-image > img {
     @apply w-full object-cover max-h-115 min-h-115
