@@ -91,6 +91,9 @@
       margin-left: -5px;
       margin-top: 10px;
     }
+    @media (min-width: 1280px) {
+      width: 300px;
+    }
   }
 
   img {
@@ -105,6 +108,14 @@
       letter-spacing: 0em;
       text-align: left;
       margin-left: -4px;
+      color: #646464;
+
+      @media (min-width: 1280px) {
+        //styleName: Heading/H5: Bold;
+        font-size: 20px;
+        line-height: 32px;
+
+      }
     }
   }
   .title > h3 {
@@ -122,6 +133,11 @@
       line-height: 38px;
 
     }
+    @media (min-width: 1280px) {
+      //styleName: Heading / H3:Medium;
+      font-size: 28px;
+      line-height: 35px;
+    }
   }
 
   .title > a > p {
@@ -137,6 +153,9 @@
     @media (min-width: 768px) {
       //styleName: Link: Bold;
       margin-bottom: 30px;
+    }
+    @media (min-width: 1280px) {
+      line-height: 17.64px;
     }
 
   }
