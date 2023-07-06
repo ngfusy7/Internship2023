@@ -70,12 +70,19 @@
     letter-spacing: 0em;
     text-align: left;
     color: #1D2020;
+    @media (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 38px;
+    }
 
   }
   h3, p {
     @media (min-width: 768px) {
       padding-left: 2px;
       width: 650px;
+    }
+    @media (min-width: 1280px) {
+      width: 412px;
     }
     
   }
@@ -85,12 +92,18 @@
       
       width: 250px;
     }
+    @media (min-width: 1280px) {
+      width: 400px;
+    }
   }
   .box-content p{
     margin-top: 17px;
     @media (min-width: 768px) {
       
       width: 250px;
+    }
+    @media (min-width: 1280px) {
+      width: 469px;
     }
   }
   p {
@@ -103,6 +116,11 @@
     text-align: left;
     color: #646464;
     margin-top: 12px;
+    @media (min-width: 1280px) {
+      line-height: 29px;
+      width: 385px;
+    }
+
   }
   .box-content p{
     margin-top: 17px;
