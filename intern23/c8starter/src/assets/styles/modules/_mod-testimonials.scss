@@ -9,7 +9,7 @@
   .btn-prev,
   .btn-next {
     @apply absolute block p-0 cursor-pointer border-none outline-none text-15 -top-35 w-15
-      md:top-105p xl:right-none;
+      md:top-100p xl:right-none;
   }
   
   .btn-prev {
@@ -21,7 +21,7 @@
   }
   
   .btn-dots {
-    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18 -mr-22
       md:top-115p md:justify-end md:gap-27.5 right-6.5
       xl:justify-start xl:pr-0 xl:right-none xl:-left-1;
     
@@ -78,12 +78,35 @@
 
   .items-content {
     @apply text-8 text-gray-300 my-30 md:my-0 xl:my-20 2xl:my-30;
+    @media (min-width: 768px) {
+      //styleName: Paragraph: Regular;
+      font-family: Plus Jakarta Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #646464;
+      width: 262px;
+      margin-left: -5px;
+      margin-top: 10px;
+    }
   }
 
   img {
     @apply w-10 h-10;
   }
-
+  h5{
+    @media (min-width: 768px) {
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: -4px;
+    }
+  }
   .title > h3 {
     //styleName: Heading/H3: Medium - Mobile;
     font-family: Plus Jakarta Sans;
@@ -93,7 +116,12 @@
     letter-spacing: 0em;
     text-align: left;
     color: #1D2020;
+    @media (min-width: 768px) {
+      //styleName: Heading/H3: Medium - Medium;
+      font-size: 24px;
+      line-height: 38px;
 
+    }
   }
 
   .title > a > p {
@@ -106,12 +134,37 @@
     text-align: left;
     color: #043673;
     margin-top: 25px;
+    @media (min-width: 768px) {
+      //styleName: Link: Bold;
+      margin-bottom: 30px;
+    }
+
   }
   .arrow{
     margin-top: 25px;
+    @media (min-width: 768px) {
+      //styleName: Link: Bold;
+      margin-bottom: 30px;
+    }
   }
 
   .items-footer > h6 {
-    @apply font-semibold text-8;
+    //styleName: Paragraph: Semi-Bold;
+    
+    @media (min-width: 768px) {
+      font-family: Plus Jakarta Sans;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: -4px;
+      margin-top: 10px;
+    }
+  }
+  .icon{
+    @media (min-width: 768px) {
+      margin-top: 16px;
+    }
   }
 }

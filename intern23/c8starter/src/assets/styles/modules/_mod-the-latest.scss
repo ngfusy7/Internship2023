@@ -1,8 +1,7 @@
 .mod-the-latest {
   .item-image > img {
     @apply w-full object-cover h-115 md:h-125 xl:h-150;
-    @media (min-width: 768px) {
-      
+    
    }
 
   }
@@ -65,4 +64,3 @@
   .item{
     margin-top: 20px;
   }
-}

@@ -7,16 +7,16 @@
   }
   
   .btn-prev {
-    @apply right-40 md:right-60 xl:-left-6
+    @apply right-40 md:right-25 xl:-left-6
   }
   
   .btn-next {
-    @apply right-20 md:right-40 xl:left-12;
+    @apply right-20 md:right-5 xl:left-12;
   }
   
   .btn-dots {
     @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
-      md:justify-end md:right-45 md:gap-27.5 xl:gap-17
+      md:justify-end md:right-10 md:gap-27.5 xl:gap-17
       xl:justify-start xl:pr-0 xl:top-175 xl:-left-7 2xl:top-170;
     
     li {

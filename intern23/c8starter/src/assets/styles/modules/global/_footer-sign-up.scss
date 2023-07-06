@@ -14,6 +14,12 @@
     text-align: left;
     color: #1D2020;
     margin-top: 15px;
+    @media (min-width: 768px) {
+      //styleName: Paragraph: Semi-Bold;
+      //styleName: Heading/H5: Bold;
+
+
+    }
   }
 
   .row-header > ul > li > a > p,
@@ -27,6 +33,12 @@
     text-align: left;
     color: #646464;
     margin-top: 20px;
+    @media (min-width: 768px) {
+      //styleName: Heading/H5: Bold;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 29px;
+    }
 
   }
 
@@ -39,23 +51,33 @@
     letter-spacing: 0em;
     text-align: left;
     color: #959D9D;
+    @media (min-width: 768px) {
+      //styleName: Paragraph: Semi-Bold;
 
+    }
     }
   .learn{
     margin-top: -54px;
+    @media (min-width: 768px) {
+      margin-top:  0px;
+
+    }
   }
   .support{
     margin-top: -62px;
   }
   .company{
-    margin-top: -71px;
+    margin-top: -65px;
   }
   .shop,
   .learn,
   .support,
   .company {
     @apply w-full p-27 pr-0;
-    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:pl-20;
+    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-40 xl:pl-20;
+    @media (min-width: 768px) {
+
+    }
   }
 
   ul {
@@ -75,6 +97,9 @@
             letter-spacing: 0em;
             text-align: center;
             margin-top: -46px;
+            @media (min-width: 768px) {
+              padding-bottom: 20px;
+            }
           }
         }
         .input-data{
@@ -97,7 +122,12 @@
               line-height: 40px;
               letter-spacing: 0em;
               text-align: center;
-              
+              @media (min-width: 768px) {
+                //styleName: Paragraph: Semi-Bold;
+                font-size: 20px;
+                line-height: 32px;
+          
+              }
             }
           }
         }
@@ -123,6 +153,7 @@
             text-align: left;
             color: #959D9D;
             margin-top: -32px;
+           
           }
 
           p:nth-child(1) {
