@@ -19,6 +19,10 @@
       font-size: 24px;
       line-height: 38px;
    }
+   @media (min-width: 1920px){
+    font-size: 36px;
+    line-height: 45px;
+   }
 
   }
 
@@ -47,6 +51,9 @@
     text-align: left;
     color: #1D2020;
     margin-top: 18px;
+    @media (min-width: 1920px){
+      width: 400px;
+   }
   }
 
   .item-content > p {

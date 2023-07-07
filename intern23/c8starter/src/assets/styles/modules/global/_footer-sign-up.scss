@@ -57,13 +57,18 @@
     }
     
     }
+  .shop{
+    @media (min-width: 1920px) {
+      width: 200px;
+    }
+  }
   .learn{
     margin-top: -54px;
     @media (min-width: 768px) {
       margin-top:  0px;
 
     }
-    @media (min-width: 1280px) {
+    @media (min-width: 1920px) {
       width: 500px;
     }
   }
@@ -71,23 +76,28 @@
     margin-top: -62px;
     @media (min-width: 1280px) {
       margin-top:  -2px;
+      width: 800px;
     }
   }
   .company{
     margin-top: -65px;
     @media (min-width: 1280px) {
       margin-top:  -2px;
+      width: 500px;
     }
   }
   .shop,
   .learn,
   .support,
   .company {
-    @apply w-full p-27 pr-0;
+    @apply w-full p-27 pr-0 ;
     @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-40 xl:pl-20;
     @media (min-width: 768px) {
 
     }
+    // @media (min-width: 1920px) {
+    //   width: 106%;
+    // }
   }
 
   ul {
@@ -113,6 +123,9 @@
             @media (min-width: 1280px) {
               //styleName: Paragraph: Semi-Bold;
               width: 252px;
+            }
+            @media (min-width: 1920px) {
+              width: 382px;
             }
           }
         }
