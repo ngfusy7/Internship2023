@@ -138,6 +138,10 @@
       font-size: 28px;
       line-height: 35px;
     }
+    @media (min-width: 1920px) {
+    font-size: 36px;
+    line-height: 45px;
+    }
   }
 
   .title > a > p {
@@ -155,6 +159,9 @@
       margin-bottom: 30px;
     }
     @media (min-width: 1280px) {
+      line-height: 17.64px;
+    }
+    @media (min-width: 1920px) {
       line-height: 17.64px;
     }
 

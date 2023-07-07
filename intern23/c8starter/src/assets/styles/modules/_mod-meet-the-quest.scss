@@ -16,6 +16,13 @@
       line-height: 38px;
       width: 600px;
     }
+    @media (min-width: 1920px) {
+      
+      //styleName: Heading/H3: Medium;
+      font-size: 36px;
+      line-height: 45px;
+      width:661px;
+    }
   }
   h5 {
     //styleName: Heading/H5: Bold - Mobile;
@@ -31,6 +38,10 @@
       //styleName: Heading / H5: Bold - Medium;
       font-size: 18px;
       line-height: 25px;
+    }
+    @media (min-width: 1920px) {
+      //styleName: Heading/H5: Bold;
+      font-size: 20px;
     }
   }
   .box2{

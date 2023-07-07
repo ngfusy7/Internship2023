@@ -19,6 +19,12 @@
          @media (min-width: 1280px) {
           //styleName: Heading/H2: Bold - Medium;
           width: 719px;
+         }
+         @media (min-width: 1920px) {
+          font-size: 48px;
+          line-height: 60px;
+          width: 1200px;
+          padding-top: 61px;
 
          }
         }        
@@ -31,7 +37,7 @@
         .sysm-bellow {
           @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
           .sysm {
-            @apply flex flex-col gap-10 items-center w-full md:w-150 xl:w-123;
+            @apply flex flex-col gap-10 items-center w-full md:w-150 xl:w-123 2xl:w-161;
             .sym-content {
               p {
                 font-family: Plus Jakarta Sans;
@@ -49,6 +55,10 @@
                 @media (min-width: 1280px) {
                   width: 245px;
                }
+               @media (min-width: 1920px) {
+                  width: 324px;
+
+             }
               }
             }
           }

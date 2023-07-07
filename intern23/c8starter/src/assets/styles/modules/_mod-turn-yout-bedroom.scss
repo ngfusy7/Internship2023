@@ -74,6 +74,11 @@
       font-size: 24px;
       line-height: 38px;
     }
+    @media (min-width: 1920px) {
+      font-size: 36px;
+      line-height: 45px;
+
+    }
 
   }
   h3, p {
@@ -95,6 +100,9 @@
     @media (min-width: 1280px) {
       width: 400px;
     }
+    @media (min-width: 1920px) {
+      width: 480px;
+    }
   }
   .box-content p{
     margin-top: 17px;
@@ -103,7 +111,11 @@
       width: 250px;
     }
     @media (min-width: 1280px) {
-      width: 469px;
+      
+      width: 437px;
+    }
+    @media (min-width: 1920px) {
+      width: 656px;
     }
   }
   p {
@@ -119,6 +131,10 @@
     @media (min-width: 1280px) {
       line-height: 29px;
       width: 385px;
+    }
+    @media (min-width: 1280px){ 
+      line-height: 29px;
+
     }
 
   }

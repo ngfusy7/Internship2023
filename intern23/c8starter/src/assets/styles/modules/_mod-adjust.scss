@@ -20,6 +20,12 @@
     line-height: 53px;
     width: 700px;
    }
+   @media (min-width: 1920px) {
+    font-size: 72px;
+    line-height: 91px;
+
+
+   }
   }
 
   p {
@@ -42,6 +48,12 @@
     //styleName: Heading/H5: Medium - Medium;
     //styleName: Heading/H5: Medium - Medium;
     width: 354px;
+    }
+    @media (min-width: 1920px) {
+      //styleName: Heading/H5: Medium - Medium;
+      font-size: 18px;
+      line-height: 29px;
+      width: 600px;
     }
   }
 
