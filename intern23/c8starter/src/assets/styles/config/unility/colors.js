@@ -6,7 +6,10 @@ const Colors = {
     400: '#ffb6c1',
     500: '#ff3fbe',
     600: '#8e44ad',
-    900: '#130f40'
+    900: '#130f40',
+    1000: '#1D2020', 
+    1100: '#FFFFFF'
+
   },
   green: {
     100: '#576541',
@@ -31,11 +34,12 @@ const Colors = {
     400: '#CDD9E3',
     500: '#4197B4',
     600: '#f5f8fa',
-    700: '#357E97'
+    700: '#357E97',
+    800:'#FFFFFF'
   },
   black: '#000',
   transparent: 'transparent',
-  'white-sm': '#fdfdfd',
+  'white-sm': '#fdfdfd'
 }
 
 module.exports = {

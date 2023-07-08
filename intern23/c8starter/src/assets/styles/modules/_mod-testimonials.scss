@@ -76,72 +76,21 @@
       md:py-10 xl:py-20 2xl:py-30 md:w-160 xl:w-190 2xl:w-245 mx-0 md:mx-5 2xl:mx-15.5;
   }
 
-  .items-content {
-    @apply text-8 text-gray-300 my-30 md:my-0 xl:my-20 2xl:my-30;
-    @media (min-width: 768px) {
-      //styleName: Paragraph: Regular;
-      font-family: Plus Jakarta Sans;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 29px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #646464;
-      width: 262px;
-      margin-left: -5px;
-      margin-top: 10px;
-    }
-    @media (min-width: 1280px) {
-      width: 300px;
-    }
+  .items-content p {
+    @apply text-gray-300 my-30 md:my-0 xl:my-20 2xl:my-30;
   }
 
   img {
     @apply w-10 h-10;
   }
   h5{
-    @media (min-width: 768px) {
-      font-family: Plus Jakarta Sans;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 25px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-left: -4px;
-      color: #646464;
-
-      @media (min-width: 1280px) {
-        //styleName: Heading/H5: Bold;
-        font-size: 20px;
-        line-height: 32px;
-
-      }
-    }
+    @apply text-gray-300 ml-[-4x];
+    
+    
   }
   .title > h3 {
-    //styleName: Heading/H3: Medium - Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #1D2020;
-    @media (min-width: 768px) {
-      //styleName: Heading/H3: Medium - Medium;
-      font-size: 24px;
-      line-height: 38px;
-
-    }
-    @media (min-width: 1280px) {
-      //styleName: Heading / H3:Medium;
-      font-size: 28px;
-      line-height: 35px;
-    }
-    @media (min-width: 1920px) {
-    font-size: 36px;
-    line-height: 45px;
-    }
+    @apply text-primary-1000
+    xl:text-[28px] md:leading-[35px];
   }
 
   .title > a > p {

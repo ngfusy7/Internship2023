@@ -3,30 +3,11 @@
     .main {
       .content {
         h2 {
-          //styleName: Heading/H2: Bold - Mobile;
-          font-family: Plus Jakarta Sans;
-          font-size: 30px;
-          font-weight: 700;
-          line-height: 42px;
-          letter-spacing: 0em;
-          text-align: center;
-          @media (min-width: 768px) {
-            //styleName: Heading/H2: Bold - Medium;
-            font-size: 32px;
-            line-height: 45px;
-            width: 450px;
-         }
-         @media (min-width: 1280px) {
-          //styleName: Heading/H2: Bold - Medium;
-          width: 719px;
-         }
-         @media (min-width: 1920px) {
-          font-size: 48px;
-          line-height: 60px;
-          width: 1200px;
-          padding-top: 61px;
-
-         }
+        @apply text-blue-800 text-center
+        md:text-[32px] md:leading-[45px] md:w-225
+        xl:w-360
+        2xl:text-[48px] 2xl:leading-[60px] 2xl:w-600 2xl:pt-31;
+        
         }        
       }
       .sym-icon{
@@ -40,24 +21,10 @@
             @apply flex flex-col gap-10 items-center w-full md:w-150 xl:w-123 2xl:w-161;
             .sym-content {
               p {
-                font-family: Plus Jakarta Sans;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 29px;
-                letter-spacing: 0em;
-                text-align: center;
-                width: 200px;
-                margin-top: 20px;
-                @media (min-width: 768px) {
-                  width: 250px;
-      
-               }
-                @media (min-width: 1280px) {
-                  width: 245px;
-               }
-               @media (min-width: 1920px) {
-                  width: 324px;
-
+                @apply text-blue-800 text-[18px] font-medium text-center text-blue-800 w-90 mt-10
+                md:w-110
+                xl:w-110
+                2xl:w-150;
              }
               }
             }
@@ -66,4 +33,3 @@
       }
     }
   }
-}

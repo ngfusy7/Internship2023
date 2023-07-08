@@ -13,7 +13,8 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Source Sans Pro', 'serif'],
-      body: ['Jost', 'sans-serif']
+      body: ['Jost', 'sans-serif'],
+      jakarta: ['Plus Jakarta Sans', 'sans-serif']
     },
     screens: configs.Screes,
     extend: {

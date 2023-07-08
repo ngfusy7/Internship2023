@@ -1,60 +1,15 @@
 .mod-adjust {
   h1 {
-    //styleName: Heading/H1: Bold- Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: left;
-    @media (min-width: 768px) {
-      //styleName: Heading/H1:Bold - Medium;
-      font-size: 42px;
-      line-height: 53px;
-      margin-top: 10px;
-
+    @apply text-primary-1000 w-200
+    md:text-[42px] md:leading-[53px] md:mt-[10px]
+    xl:w-350
+    2xl:text-[72px] 2xl:leading-[91px];
    }
-   @media (min-width: 1280px) {
-    //styleName: Heading/H1:Bold - Medium;
-    font-size: 42px;
-    line-height: 53px;
-    width: 700px;
-   }
-   @media (min-width: 1920px) {
-    font-size: 72px;
-    line-height: 91px;
-
-
-   }
-  }
-
+   
   p {
-    //styleName: Heading/H5: Medium - Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #646464;
-    @media (min-width: 768px) {
-      //styleName: Heading/H5: Medium - Medium;
-      font-size: 18px;
-      line-height: 29px;
-      width: 550px;
-    }
-
-   @media (min-width: 1280px) {
-    //styleName: Heading/H5: Medium - Medium;
-    //styleName: Heading/H5: Medium - Medium;
-    width: 354px;
-    }
-    @media (min-width: 1920px) {
-      //styleName: Heading/H5: Medium - Medium;
-      font-size: 18px;
-      line-height: 29px;
-      width: 600px;
-    }
+    @apply text-[20px] font-medium leading-[32px] text-gray-300 w-150
+    md:text-[18px] md:leading-[29px] md:w-250 
+    xl:w-177
+    2xl:text-[18px] 2xl:w-300;
   }
-
 }

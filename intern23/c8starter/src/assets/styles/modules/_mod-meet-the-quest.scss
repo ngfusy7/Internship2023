@@ -1,48 +1,14 @@
 .mod-meet-the-quest {
   .title > h3 {
-    //styleName: Heading/H3: Medium - Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #1D2020;
-    width: 300px;
-    @media (min-width: 768px) {
-      
-      //styleName: Heading/H3: Medium - Medium;
-      font-size: 24px;
-      line-height: 38px;
-      width: 600px;
-    }
-    @media (min-width: 1920px) {
-      
-      //styleName: Heading/H3: Medium;
-      font-size: 36px;
-      line-height: 45px;
-      width:661px;
-    }
+    @apply text-primary-1000 w-[300px]
+    md:w-[600px]
+    2xl:w-[661px];
   }
   h5 {
-    //styleName: Heading/H5: Bold - Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #1D2020;
-    margin-top: 20px;
-    @media (min-width: 768px) {
-      //styleName: Heading / H5: Bold - Medium;
-      font-size: 18px;
-      line-height: 25px;
-    }
-    @media (min-width: 1920px) {
-      //styleName: Heading/H5: Bold;
-      font-size: 20px;
-    }
+    @apply text-primary-1000 mt-[20px]
+    md:leading-[25px]
+    2xl:text-[20px];
+    
   }
   .box2{
     margin-top: 48px;
@@ -51,28 +17,11 @@
     }
   }
   .item-content-content p {
-    font-family: Plus Jakarta Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 10px;
+    @apply text-gray-300 mt-[10px] leading-[24px] w-[300px];
   }
   a > p {
-    //styleName: Link: Bold;
-    font-family: Plus Jakarta Sans;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #043673;
-    margin-top: 27px;
-    @media (min-width: 768px) {
-      margin-top: 12px;
-      
-    }
+    @apply text-[14px] leading-[18px] font-bold mt-[27px]
+    md:mt-[12px];
   }
   .arrow{
     margin-top:27px;

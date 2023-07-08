@@ -1,11 +1,8 @@
 .footer-sign-up {
-  
-  
   .logo{
     margin-top: 74px;
   }
   .title h5 {
-    //styleName: Heading/H5: Bold - Mobile;
     font-family: Plus Jakarta Sans;
     font-size: 20px;
     font-weight: 700;
@@ -109,24 +106,10 @@
       .box-input {
         .title {
           p {
-            //styleName: Paragraph: Semi-Bold;
-            font-family: Plus Jakarta Sans;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 29px;
-            letter-spacing: 0em;
-            text-align: center;
-            margin-top: -46px;
-            @media (min-width: 768px) {
-              padding-bottom: 20px;
-            }
-            @media (min-width: 1280px) {
-              //styleName: Paragraph: Semi-Bold;
-              width: 252px;
-            }
-            @media (min-width: 1920px) {
-              width: 382px;
-            }
+            @apply text-center mt-[-46px] text-blue-800
+            md:pb-[20px]
+            xl:w-[252px]
+            2xl:w-[382px];
           }
         }
         .input-data{
@@ -143,24 +126,7 @@
         .contact {
           .phone {
             h4 {
-              font-family: Plus Jakarta Sans;
-              font-size: 25px;
-              font-weight: 500;
-              line-height: 40px;
-              letter-spacing: 0em;
-              text-align: center;
-              @media (min-width: 768px) {
-                //styleName: Paragraph: Semi-Bold;
-                font-size: 20px;
-                line-height: 32px;
-          
-              }
-              @media (min-width: 1280px) {
-                //styleName: Heading/H4: Medium;
-                font-size: 25px;
-                line-height: 40px;
-
-              }
+              @apply text-[25px] leading-[40px] text-center text-blue-800;
             }
           }
         }

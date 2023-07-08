@@ -11,27 +11,38 @@
   }
   h1,
   .h1 {
-    @apply font-bold text-18 md:text-21 2xl:text-36;
+    @apply font-jakarta text-[36px] font-bold leading-[45px] tracking-tight text-left text-blue-300
+           md:text-[42px] md:leading-[53px]
+           2xl:text-[72px] 2xl:leading-[91px];
+           //styleName: Heading/H1: Bold- Mobile;
   }
 
   h2,
   .h2 {
-    @apply font-bold text-15 md:text-16 2xl:text-24;
+    @apply font-jakarta text-[30px] font-bold leading-[42px] tracking-tight text-left text-blue-300
+    md:text-[32px] md:leading-[45px]
+    2xl:text-[48px] 2xl:leading-[60px];
   }
 
   h3,
   .h3 {
-    @apply font-medium text-13 md:text-12 2xl:text-18;
+    @apply font-jakarta text-[26px] font-medium leading-[36px] tracking-tight text-left text-blue-300
+    md:text-[24px] md:leading-[38px]
+    2xl:text-[36px] 2xl:leading-[45px];
   }
 
   h4,
   .h4 {
-    @apply font-medium text-11 md:text-10 2xl:text-12.5;
+    @apply font-jakarta text-[22px] font-medium leading-[35px] tracking-tight text-left text-blue-300
+           md:text-[20px] md:leading-[32px]
+           2xl:text-[25px] 2xl:leading-[40px];
   }
 
   h5,
   .h5 {
-    @apply font-bold text-10 md:text-9 2xl:text-10;
+    @apply font-jakarta text-[20px] font-bold leading-[32px] tracking-tight text-left
+    md:text-[18px] md:leading-[25px]
+    2xl:text-[20px] 2xl:leading-[32px];
   }
 
   h6,
@@ -39,7 +50,7 @@
     @apply text-h5 font-medium;
   }
   p {
-    @apply font-normal text-8;
+    @apply font-jakarta text-[16px] font-normal leading-[29px] tracking-tight text-left text-blue-300;
   }
   small {
     @apply text-sm;
