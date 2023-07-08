@@ -17,7 +17,9 @@
     }
   }
   .item-content-content p {
-    @apply text-gray-300 mt-[10px] leading-[24px] w-[300px];
+    @apply text-gray-300 mt-[10px] leading-[24px] w-[300px]
+    xl:w-[400px]
+    2xl:w-[550px];
   }
   a > p {
     @apply text-[14px] leading-[18px] font-bold mt-[27px]

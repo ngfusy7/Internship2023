@@ -7,22 +7,7 @@
   }
 
   h3 {
-    //styleName: Heading/H3: Medium - Mobile;
-    font-family: Plus Jakarta Sans;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-    @media (min-width: 768px) {
-      //styleName: Heading/H3: Medium - Medium;
-      font-size: 24px;
-      line-height: 38px;
-   }
-   @media (min-width: 1920px){
-    font-size: 36px;
-    line-height: 45px;
-   }
+    @apply text-primary-1000;
 
   }
 
