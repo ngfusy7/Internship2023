@@ -88,12 +88,12 @@
     
     
   }
-  .title > h3 {
+  .main-content  > h3 {
     @apply text-primary-1000
     xl:text-[28px] md:leading-[35px];
   }
 
-  .title > a > p {
+  .main-content  > a > p {
     //styleName: Link: Bold;
     font-family: Plus Jakarta Sans;
     font-size: 14px;

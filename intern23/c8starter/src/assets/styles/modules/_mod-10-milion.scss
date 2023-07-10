@@ -1,6 +1,6 @@
 .mod-10-milion {
   .container {
-    .main {
+    .main-content {
       .content {
         h2 {
         @apply text-blue-800 text-center
@@ -13,13 +13,13 @@
       .sym-icon{
         margin-top: 10px;
       }
-      .four-symboilize {
-        .sysm-above,
-        .sysm-bellow {
+      .icons {
+        .icons-first,
+        .icons-second {
           @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
-          .sysm {
+          .icon-part {
             @apply flex flex-col gap-10 items-center w-full md:w-150 xl:w-123 2xl:w-161;
-            .sym-content {
+            .icon-content {
               p {
                 @apply text-blue-800 text-[18px] font-medium text-center text-blue-800 w-90 mt-10
                 md:w-110
