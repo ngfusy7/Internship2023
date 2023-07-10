@@ -1,9 +1,10 @@
 .mod-adjust {
   h1 {
-    @apply text-primary-1000 w-200
+    @apply text-primary-1000 w-200 
     md:text-[42px] md:leading-[53px] md:mt-[10px]
     xl:w-350
     2xl:text-[72px] 2xl:leading-[91px];
+    
    }
    
   p {
@@ -12,4 +13,5 @@
     xl:w-177
     2xl:text-[18px] 2xl:w-300;
   }
+  
 }
