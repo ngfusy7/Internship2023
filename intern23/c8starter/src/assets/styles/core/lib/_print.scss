@@ -258,8 +258,14 @@ h6 {
   display: none;
 }
 
-#noncontent{
+.noncontent{
   display: none;
+}
+.mxcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 // .navbar-expand-lg,
 // #header-logo .d-lg-none,

@@ -20,7 +20,16 @@
  h3 {
   @apply text-primary-1000 m-0;
  }
-
+.part-img1 {
+  overflow: hidden;
+}
+.part-img1 img {
+   transition: 0.5s all ease-in-out;
+        }
+.part-img1:hover img {
+            transform: scale(1.5);
+}
+      
  .images-items {
     @apply flex justify-center items-center gap-5 w-full h-30p;
  }

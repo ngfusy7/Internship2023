@@ -4,7 +4,7 @@
     
    }
 
-  }
+  
 
   h3 {
     @apply text-primary-1000;
@@ -56,3 +56,11 @@
   .item{
     margin-top: 20px;
   }
+  .part-img1 {
+    overflow: hidden;
+  }
+  
+  .part-img1:hover img {
+    filter: brightness(80%);
+}
+}

@@ -1,0 +1,41 @@
+.mod-test1{
+    
+    h1 {
+        @apply text-primary-1000 w-200 
+        md:text-[42px] md:leading-[53px] md:mt-[10px]
+        xl:w-350
+        2xl:text-[72px] 2xl:leading-[91px];
+        
+       }
+    
+.text-shadow {
+	
+	
+	color: transparent;
+	// -webkit-text-stroke: #fff;
+	// -webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px #fff;
+	transition: all 0.5s ease-in-out;
+	animation: flicker 0.5s ease-in-out infinite alternate;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px #fff;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px #fff;
+	}
+}
+
+    
+
+}

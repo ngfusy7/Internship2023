@@ -35,7 +35,8 @@ const Colors = {
     500: '#4197B4',
     600: '#f5f8fa',
     700: '#357E97',
-    800:'#FFFFFF'
+    800:'#FFFFFF',
+    
   },
   black: '#000',
   transparent: 'transparent',

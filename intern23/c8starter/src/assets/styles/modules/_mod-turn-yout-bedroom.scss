@@ -7,17 +7,19 @@
   }
   
   .btn-prev {
-    @apply right-40 md:right-25 xl:-left-6
+    @apply right-17 md:right-25 xl:-left-6
+    xl:top-160 2xl:top-126
   }
   
   .btn-next {
-    @apply right-20 md:right-5 xl:left-12;
+    @apply -right-2 md:right-5 xl:left-12
+    xl:top-160 2xl:top-126;
   }
-  
+
   .btn-dots {
-    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18 -right-19
       md:justify-end md:right-10 md:gap-27.5 xl:gap-17
-      xl:justify-start xl:pr-0 xl:top-175 xl:-left-7 2xl:top-170;
+      xl:justify-start xl:pr-0 xl:top-200 xl:-left-7 2xl:top-170;
     
     li {
       @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;

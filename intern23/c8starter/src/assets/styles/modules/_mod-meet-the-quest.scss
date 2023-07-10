@@ -36,4 +36,13 @@
     @apply w-full object-cover max-h-115 min-h-115
       md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
   }
+  .part-img1 {
+    overflow: hidden;
+  }
+  .part-img1 img {
+     transition: 0.5s all ease-in-out;
+          }
+  .part-img1:hover img {
+              transform: scale(1.2);
+  }
 }
